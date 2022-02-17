@@ -1,4 +1,26 @@
 {% extends "book_of_recipes/base.html" %}
 {% block content %}
-    Recipes List
+    {% for recipe in recipes %}
+        {% url 'recipe' slug=recipe.category.slug slug1=recipe.slug as the_url %}
+        <article class="recipe">
+            <div class="left">
+                <a href={{the_url}}><h2>{{recipe.name}}</h2></a>
+                <img src="{{recipe.image.url}}" class="recipe-image-main">
+            </div>
+            <div class="right">
+                <h3>Ингредиенты</h3>
+                {% if recipe.ingredients.all|length < 6 %}
+                    {% for ingredient in recipe.ingredients.all %}
+                        <p>{{ingredient.name}}-{{ingredient.quantity}} {{ingredient.unit_of_measurement}}</p>
+                    {% endfor %}
+                {% else %}
+                    {% for ingredient in recipe.ingredients.all|slice:":6" %}
+                        <p>{{ingredient.name}}-{{ingredient.quantity}} {{ingredient.unit_of_measurement}}</p>
+                    {% endfor %}
+                {% endif %}
+                <a href={{the_url}}><p>Посмотреть весь список ингредиентов</p></a>
+            </div>
+        </article>
+
+    {% endfor %}
 {% endblock %}

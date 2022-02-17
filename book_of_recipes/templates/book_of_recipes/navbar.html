@@ -6,8 +6,15 @@
     </div>
     <nav>
       <ul>
-        <li><a href="#">Главная</a></li>
-        <li><a href="#">Категории</a></li>
+        <li><a href="{% url 'recipes' %}">Главная</a></li>
+        <div class="dropdown">
+          <button class="dropbtn">Category</button>
+          <div class="dropdown-content">
+            {% for category in categories %}
+              <li><a href="{% url 'recipes_at_category' slug=category.slug %}">{{category.name}}</a></li>
+            {% endfor %}
+          </div>
+        </div>
         <li><a href="#">Авторизация</a></li>
         <li><a href="#">Регистрация</a></li>
       </ul>

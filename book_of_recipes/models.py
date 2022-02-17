@@ -58,13 +58,13 @@ class Recipe(models.Model):
 
 class Ingredient(models.Model):
     """Ингредиент"""
-    KILOGRAM = 'KG'
-    GRAM = 'G'
-    LITRE = 'L'
-    MILLILITRE = 'ML'
-    PIECE = 'P'
-    TEASPOON = 'T'
-    NULL = 'EMPTY'
+    KILOGRAM = 'кг'
+    GRAM = 'г'
+    LITRE = 'л'
+    MILLILITRE = 'мл'
+    PIECE = 'шт.'
+    TEASPOON = 'ч.л.'
+
     UNIT_OF_MEASUREMENT_CHOICES = [
         (KILOGRAM, 'кг'),
         (GRAM, 'г'),
@@ -72,23 +72,23 @@ class Ingredient(models.Model):
         (MILLILITRE, 'мл'),
         (PIECE, 'шт.'),
         (TEASPOON, 'ч.л.'),
-        (NULL, ''),
     ]
     name = models.CharField(max_length=150, verbose_name='Наименование')
     description = models.TextField(verbose_name='Описание', blank=True)
     slug = models.SlugField(unique=True, verbose_name='Слаг')
     archive = models.BooleanField(default=False, verbose_name='Архив')
-    quantity = models.PositiveSmallIntegerField(verbose_name='Количество')
+    quantity = models.CharField(max_length=50, verbose_name='Количество', blank=True, null=True)
 
     unit_of_measurement = models.CharField(
-        max_length=2,
+        max_length=10,
         choices=UNIT_OF_MEASUREMENT_CHOICES,
-        default=NULL,
-        verbose_name='Единица измерения'
+        verbose_name='Единица измерения',
+        blank=True,
+        null=True
     )
 
     def __str__(self):
-        return self.name
+        return f'{self.name}-{self.quantity}-{self.unit_of_measurement}'
 
     class Meta:
         verbose_name = 'Ингредиент'
