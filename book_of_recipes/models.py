@@ -88,7 +88,9 @@ class Ingredient(models.Model):
     )
 
     def __str__(self):
-        return f'{self.name}-{self.quantity}-{self.unit_of_measurement}'
+        if self.quantity and self.unit_of_measurement:
+            return f'{self.name}-{self.quantity}-{self.unit_of_measurement}'
+        return f'{self.name}'
 
     class Meta:
         verbose_name = 'Ингредиент'

@@ -1,0 +1,398 @@
+[
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 1,
+  "fields": {
+    "name": "крылышки индейки",
+    "description": "",
+    "slug": "krylyshki-indejki-2-sht",
+    "archive": false,
+    "quantity": "2",
+    "unit_of_measurement": "шт."
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 2,
+  "fields": {
+    "name": "лук репчатый",
+    "description": "",
+    "slug": "luk-repchatyj-1-sht",
+    "archive": false,
+    "quantity": "1",
+    "unit_of_measurement": "шт."
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 3,
+  "fields": {
+    "name": "морковь",
+    "description": "",
+    "slug": "morkov-05-sht",
+    "archive": false,
+    "quantity": "0.5",
+    "unit_of_measurement": "шт."
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 4,
+  "fields": {
+    "name": "стебель сельдерея",
+    "description": "",
+    "slug": "stebel-seldereya-1-sht",
+    "archive": false,
+    "quantity": "1",
+    "unit_of_measurement": "шт."
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 5,
+  "fields": {
+    "name": "гвоздика",
+    "description": "",
+    "slug": "gvozdika-4-sht",
+    "archive": false,
+    "quantity": "4",
+    "unit_of_measurement": "шт."
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 6,
+  "fields": {
+    "name": "лавровый лист",
+    "description": "",
+    "slug": "lavrovyj-list-1-sht",
+    "archive": false,
+    "quantity": "1",
+    "unit_of_measurement": "шт."
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 7,
+  "fields": {
+    "name": "соль",
+    "description": "",
+    "slug": "sol",
+    "archive": false,
+    "quantity": null,
+    "unit_of_measurement": null
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 8,
+  "fields": {
+    "name": "вода",
+    "description": "",
+    "slug": "voda",
+    "archive": false,
+    "quantity": null,
+    "unit_of_measurement": null
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 9,
+  "fields": {
+    "name": "помидор",
+    "description": "",
+    "slug": "pomidor-2-sht",
+    "archive": false,
+    "quantity": "2",
+    "unit_of_measurement": "шт."
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 10,
+  "fields": {
+    "name": "чеснок",
+    "description": "",
+    "slug": "chesnok-1-sht",
+    "archive": false,
+    "quantity": "1",
+    "unit_of_measurement": "шт."
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 11,
+  "fields": {
+    "name": "масло оливковое",
+    "description": "",
+    "slug": "maslo-olivkovoe",
+    "archive": false,
+    "quantity": null,
+    "unit_of_measurement": null
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 12,
+  "fields": {
+    "name": "черный перец",
+    "description": "",
+    "slug": "chernyj-perec",
+    "archive": false,
+    "quantity": null,
+    "unit_of_measurement": null
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 13,
+  "fields": {
+    "name": "сахар",
+    "description": "",
+    "slug": "sahar",
+    "archive": false,
+    "quantity": null,
+    "unit_of_measurement": null
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 14,
+  "fields": {
+    "name": "острая паприка",
+    "description": "",
+    "slug": "ostraya-paprika",
+    "archive": false,
+    "quantity": null,
+    "unit_of_measurement": null
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 15,
+  "fields": {
+    "name": "зелень",
+    "description": "",
+    "slug": "zelen",
+    "archive": false,
+    "quantity": null,
+    "unit_of_measurement": null
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 16,
+  "fields": {
+    "name": "чечевица красная",
+    "description": "",
+    "slug": "chechevica-krasnaya-200-g",
+    "archive": false,
+    "quantity": "200",
+    "unit_of_measurement": "г"
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 17,
+  "fields": {
+    "name": "креветки",
+    "description": "",
+    "slug": "krevetki-10-sht",
+    "archive": false,
+    "quantity": "10",
+    "unit_of_measurement": "шт."
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 18,
+  "fields": {
+    "name": "морковь",
+    "description": "",
+    "slug": "morkov-1-sht",
+    "archive": false,
+    "quantity": "1",
+    "unit_of_measurement": "шт."
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 19,
+  "fields": {
+    "name": "масло растительное",
+    "description": "",
+    "slug": "maslo-rastitelnoe",
+    "archive": false,
+    "quantity": null,
+    "unit_of_measurement": null
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 20,
+  "fields": {
+    "name": "чеснок",
+    "description": "",
+    "slug": "chesnok-2-sht",
+    "archive": false,
+    "quantity": "2",
+    "unit_of_measurement": "шт."
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 21,
+  "fields": {
+    "name": "перец кайенский молотый",
+    "description": "",
+    "slug": "perec-kajenskij-molotyj",
+    "archive": false,
+    "quantity": null,
+    "unit_of_measurement": null
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 22,
+  "fields": {
+    "name": "лайм",
+    "description": "",
+    "slug": "lajm",
+    "archive": false,
+    "quantity": null,
+    "unit_of_measurement": null
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 23,
+  "fields": {
+    "name": "кориандр",
+    "description": "",
+    "slug": "koriandr",
+    "archive": false,
+    "quantity": null,
+    "unit_of_measurement": null
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 24,
+  "fields": {
+    "name": "кумин",
+    "description": "",
+    "slug": "kumin",
+    "archive": false,
+    "quantity": null,
+    "unit_of_measurement": null
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 25,
+  "fields": {
+    "name": "карри",
+    "description": "",
+    "slug": "karri",
+    "archive": false,
+    "quantity": null,
+    "unit_of_measurement": null
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 26,
+  "fields": {
+    "name": "кинза",
+    "description": "",
+    "slug": "kinza",
+    "archive": false,
+    "quantity": null,
+    "unit_of_measurement": null
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 27,
+  "fields": {
+    "name": "йогурт",
+    "description": "",
+    "slug": "jogurt",
+    "archive": false,
+    "quantity": null,
+    "unit_of_measurement": null
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 28,
+  "fields": {
+    "name": "финики",
+    "description": "",
+    "slug": "finiki",
+    "archive": false,
+    "quantity": "100",
+    "unit_of_measurement": "г"
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 29,
+  "fields": {
+    "name": "орехи кешью",
+    "description": "",
+    "slug": "orehi-keshyu",
+    "archive": false,
+    "quantity": "100",
+    "unit_of_measurement": "г"
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 30,
+  "fields": {
+    "name": "миндаль",
+    "description": "",
+    "slug": "mindal",
+    "archive": false,
+    "quantity": "100",
+    "unit_of_measurement": "г"
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 31,
+  "fields": {
+    "name": "мёд",
+    "description": "",
+    "slug": "myod",
+    "archive": false,
+    "quantity": "4",
+    "unit_of_measurement": "ч.л."
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 32,
+  "fields": {
+    "name": "какао",
+    "description": "",
+    "slug": "kakao",
+    "archive": false,
+    "quantity": null,
+    "unit_of_measurement": null
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 33,
+  "fields": {
+    "name": "кокосовая стружка",
+    "description": "",
+    "slug": "kokosovaya-struzhka",
+    "archive": false,
+    "quantity": null,
+    "unit_of_measurement": null
+  }
+}
+]

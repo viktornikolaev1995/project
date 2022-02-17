@@ -1,0 +1,74 @@
+[
+{
+  "model": "book_of_recipes.recipecomments",
+  "pk": 1,
+  "fields": {
+    "name": "Игорь Шубин",
+    "text": "Почему не указываете на какой объем кастрюли вы берете данное количество продуктов. Спасибо",
+    "email": "igorshubin1967@gmail.com",
+    "pub_date": "2022-02-17T20:33:08.088Z",
+    "parent": null,
+    "recipe": 1
+  }
+},
+{
+  "model": "book_of_recipes.recipecomments",
+  "pk": 2,
+  "fields": {
+    "name": "Регина",
+    "text": "Как по мне, то очень вкусное блюдо, особенно, если вы большой поклонник томатов.",
+    "email": "reginamakarenko1988@yandex.ru",
+    "pub_date": "2022-02-17T20:33:50.874Z",
+    "parent": null,
+    "recipe": 1
+  }
+},
+{
+  "model": "book_of_recipes.recipecomments",
+  "pk": 3,
+  "fields": {
+    "name": "Полина",
+    "text": "Вполне себе неплохо получилось, скушали с большим удовольствием, но не могу сказать с уверенностью, что буду такое готовить снова.",
+    "email": "polinaabramenko1992@gmail.ru",
+    "pub_date": "2022-02-17T20:33:50.874Z",
+    "parent": null,
+    "recipe": 2
+  }
+},
+{
+  "model": "book_of_recipes.recipecomments",
+  "pk": 4,
+  "fields": {
+    "name": "Арина",
+    "text": "Для меня было немного необычное сочетание, но определенно все вкусно. Спасибо.",
+    "email": "arinavaculenko1998@gmail.ru",
+    "pub_date": "2022-02-17T20:33:50.874Z",
+    "parent": null,
+    "recipe": 2
+  }
+},
+{
+  "model": "book_of_recipes.recipecomments",
+  "pk": 5,
+  "fields": {
+    "name": "Регина",
+    "text": "Хороший и вкусный рецепт, блюдо нравится всем моим гостям.",
+    "email": "reginamakarenkova1976@gmail.ru",
+    "pub_date": "2022-02-17T20:33:50.874Z",
+    "parent": null,
+    "recipe": 3
+  }
+},
+{
+  "model": "book_of_recipes.recipecomments",
+  "pk": 6,
+  "fields": {
+    "name": "Татьяна",
+    "text": "Понравилось, можно готовить на праздники",
+    "email": "tatiyanavolkova1990@gmail.ru",
+    "pub_date": "2022-02-17T20:33:50.874Z",
+    "parent": null,
+    "recipe": 3
+  }
+}
+]

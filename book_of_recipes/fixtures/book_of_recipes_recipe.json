@@ -1,0 +1,92 @@
+[
+{
+  "model": "book_of_recipes.recipe",
+  "pk": 1,
+  "fields": {
+    "name": "Острый томатный суп с индейкой",
+    "description": "",
+    "slug": "ostryj-tomatnyj-sup-s-indejkoj",
+    "image": "recipes/ajdfaiweo134oijwe.jpg",
+    "category": 1,
+    "cooking_time": "1 час",
+    "user": null,
+    "archive": false,
+    "date_created": "2022-02-17T20:31:58.647Z",
+    "date_update": "2022-02-17T20:31:58.647Z",
+    "ingredients": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ]
+  }
+},
+{
+  "model": "book_of_recipes.recipe",
+  "pk": 2,
+  "fields": {
+    "name": "Суп с чечевицей и креветками",
+    "description": "",
+    "slug": "sup-s-chechevicej-i-krevetkami",
+    "image": "recipes/e098419343061a5.jpg",
+    "category": 1,
+    "cooking_time": "30 минут",
+    "user": null,
+    "archive": false,
+    "date_created": "2022-02-17T20:31:58.647Z",
+    "date_update": "2022-02-17T20:31:58.647Z",
+    "ingredients": [
+      2,
+      7,
+      8,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27
+    ]
+  }
+},
+{
+  "model": "book_of_recipes.recipe",
+  "pk": 3,
+  "fields": {
+    "name": "Конфеты из фиников",
+    "description": "",
+    "slug": "konfety-iz-finikov",
+    "image": "recipes/2a5d03b55564b0b74235.jpg",
+    "category": 2,
+    "cooking_time": "15 минут",
+    "user": null,
+    "archive": false,
+    "date_created": "2022-02-17T20:31:58.647Z",
+    "date_update": "2022-02-17T20:31:58.647Z",
+    "ingredients": [
+      28,
+      29,
+      30,
+      31,
+      32,
+      33
+    ]
+  }
+}
+]

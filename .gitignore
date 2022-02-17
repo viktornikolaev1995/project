@@ -4,9 +4,7 @@ __pycache__
 .env
 # virtualenv
 .venv
-
 *.pyc
-media/
 # pyenv
 .python-version
 db.sqlite3

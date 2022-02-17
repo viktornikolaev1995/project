@@ -1,0 +1,47 @@
+[
+{
+  "model": "book_of_recipes.category",
+  "pk": 1,
+  "fields": {
+    "name": "Супы",
+    "description": "",
+    "slug": "supy"
+  }
+},
+{
+  "model": "book_of_recipes.category",
+  "pk": 2,
+  "fields": {
+    "name": "Десерты",
+    "description": "",
+    "slug": "deserty"
+  }
+},
+{
+  "model": "book_of_recipes.category",
+  "pk": 3,
+  "fields": {
+    "name": "Салаты",
+    "description": "",
+    "slug": "salaty"
+  }
+},
+{
+  "model": "book_of_recipes.category",
+  "pk": 4,
+  "fields": {
+    "name": "Закуски",
+    "description": "",
+    "slug": "zakuski"
+  }
+},
+{
+  "model": "book_of_recipes.category",
+  "pk": 5,
+  "fields": {
+    "name": "Соусы и маринады",
+    "description": "",
+    "slug": "sousy-i-marinady"
+  }
+}
+]

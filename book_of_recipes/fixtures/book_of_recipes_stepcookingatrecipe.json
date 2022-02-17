@@ -1,0 +1,156 @@
+[
+{
+  "model": "book_of_recipes.stepcookingatrecipe",
+  "pk": 1,
+  "fields": {
+    "name": "Шаг приготовления по рецепту 1",
+    "description": "Крылья индейки заливаем кипятком. Добавляем репчатый лук, гвоздику, стебель сельдерея, морковь, лавровый лист и соль. Накрываем крышкой и варим 30 минут. Удаляем крылья индейки и овощи.",
+    "slug": "1-shag-prigotovleniya-po-receptu-1",
+    "image": "images_of_steps_for_cooking_at_recipe/2022/02/17/ajdfaiweo134oijwe_1.png",
+    "recipe": 1
+  }
+},
+{
+  "model": "book_of_recipes.stepcookingatrecipe",
+  "pk": 2,
+  "fields": {
+    "name": "Шаг приготовления по рецепту 2",
+    "description": "Помидоры разрезаем пополам и удаляем семечки. Поливаем оливковым маслом. Посыпаем чёрным перцем, солью и сахарным песком. Запекаем в духовке 15 минут при температуре 200°С.",
+    "slug": "1-shag-prigotovleniya-po-receptu-2",
+    "image": "images_of_steps_for_cooking_at_recipe/2022/02/17/ajdfaiweo134oijwe_2.png",
+    "recipe": 1
+  }
+},
+{
+  "model": "book_of_recipes.stepcookingatrecipe",
+  "pk": 3,
+  "fields": {
+    "name": "Шаг приготовления по рецепту 3",
+    "description": "Готовым помидорам даём остыть. Затем удаляем шкурку. В стакане блендера соединяем помидоры, чеснок и всё пробиваем. Добавляем молотую острую паприку и ещё раз пробиваем. Полученную массу переливаем в сотейник.",
+    "slug": "1-shag-prigotovleniya-po-receptu-3",
+    "image": "images_of_steps_for_cooking_at_recipe/2022/02/17/ajdfaiweo134oijwe_3.png",
+    "recipe": 1
+  }
+},
+{
+  "model": "book_of_recipes.stepcookingatrecipe",
+  "pk": 4,
+  "fields": {
+    "name": "Шаг приготовления по рецепту 4",
+    "description": "Вливаем бульон. Наливаем суп в большую кружку. Добавляем мясо индейки и зелень. Приятного аппетита!",
+    "slug": "1-shag-prigotovleniya-po-receptu-4",
+    "image": "images_of_steps_for_cooking_at_recipe/2022/02/17/ajdfaiweo134oijwe_4.jpg",
+    "recipe": 1
+  }
+},
+{
+  "model": "book_of_recipes.stepcookingatrecipe",
+  "pk": 5,
+  "fields": {
+    "name": "Шаг приготовления по рецепту 1",
+    "description": "Очищаем морковь, лук и чеснок, все произвольно нарезаем, чеснок натираем на мелкой тёрке. Обжариваем овощи на сковороде с растительным маслом.",
+    "slug": "2-shag-prigotovleniya-po-receptu-1",
+    "image": "images_of_steps_for_cooking_at_recipe/2022/02/17/e098419343061a5_1.png",
+    "recipe": 2
+  }
+},
+{
+  "model": "book_of_recipes.stepcookingatrecipe",
+  "pk": 6,
+  "fields": {
+    "name": "Шаг приготовления по рецепту 2",
+    "description": "В ступке измельчаем кориандр и кумин, приправляем овощи смесью, добавляем кайенский молотый перец и карри, оставляем обжариваться. Промываем красную чечевицу и выкладываем на сковороду к овощам.",
+    "slug": "2-shag-prigotovleniya-po-receptu-2",
+    "image": "images_of_steps_for_cooking_at_recipe/2022/02/17/e098419343061a5_2.png",
+    "recipe": 2
+  }
+},
+{
+  "model": "book_of_recipes.stepcookingatrecipe",
+  "pk": 7,
+  "fields": {
+    "name": "Шаг приготовления по рецепту 3",
+    "description": "Все перекладываем в кастрюлю с кипящей водой, варим несколько минут. Пробиваем блендером.",
+    "slug": "2-shag-prigotovleniya-po-receptu-3",
+    "image": "images_of_steps_for_cooking_at_recipe/2022/02/17/e098419343061a5_3.png",
+    "recipe": 2
+  }
+},
+{
+  "model": "book_of_recipes.stepcookingatrecipe",
+  "pk": 8,
+  "fields": {
+    "name": "Шаг приготовления по рецепту 4",
+    "description": "Креветки пресервы вместе с рассолом прогреваем в сотейнике.",
+    "slug": "2-shag-prigotovleniya-po-receptu-4",
+    "image": "images_of_steps_for_cooking_at_recipe/2022/02/17/e098419343061a5_4.png",
+    "recipe": 2
+  }
+},
+{
+  "model": "book_of_recipes.stepcookingatrecipe",
+  "pk": 9,
+  "fields": {
+    "name": "Шаг приготовления по рецепту 5",
+    "description": "Добавляем часть в суп и еще раз пробиваем, солим.",
+    "slug": "2-shag-prigotovleniya-po-receptu-5",
+    "image": "images_of_steps_for_cooking_at_recipe/2022/02/17/e098419343061a5_5.png",
+    "recipe": 2
+  }
+},
+{
+  "model": "book_of_recipes.stepcookingatrecipe",
+  "pk": 10,
+  "fields": {
+    "name": "Шаг приготовления по рецепту 6",
+    "description": "При подаче добавляем целые креветки, измельчённую кинзу, йогурт. Приятного аппетита!",
+    "slug": "2-shag-prigotovleniya-po-receptu-6",
+    "image": "images_of_steps_for_cooking_at_recipe/2022/02/17/e098419343061a5_6.jpg",
+    "recipe": 2
+  }
+},
+{
+  "model": "book_of_recipes.stepcookingatrecipe",
+  "pk": 11,
+  "fields": {
+    "name": "Шаг приготовления по рецепту 1",
+    "description": "Выкладываем в чашу блендера обжаренные кешью и пробиваем, выкладываем в отдельную миску.",
+    "slug": "3-shag-prigotovleniya-po-receptu-1",
+    "image": "images_of_steps_for_cooking_at_recipe/2022/02/17/2a5d03b55564b0b74235_1.png",
+    "recipe": 3
+  }
+},
+{
+  "model": "book_of_recipes.stepcookingatrecipe",
+  "pk": 12,
+  "fields": {
+    "name": "Шаг приготовления по рецепту 2",
+    "description": "Пробиваем обжаренный миндаль. Затем отдельно измельчаем финики без косточек. Затем добавляем мёд. После этого объединяем ингредиенты в блендере.",
+    "slug": "3-shag-prigotovleniya-po-receptu-2",
+    "image": "images_of_steps_for_cooking_at_recipe/2022/02/17/2a5d03b55564b0b74235_2.png",
+    "recipe": 3
+  }
+},
+{
+  "model": "book_of_recipes.stepcookingatrecipe",
+  "pk": 13,
+  "fields": {
+    "name": "Шаг приготовления по рецепту 3",
+    "description": "Смачиваем руки водой и формуем конфеты. Панируем в ореховой пыли, какао-порошке, кокосовой стружке.",
+    "slug": "3-shag-prigotovleniya-po-receptu-3",
+    "image": "images_of_steps_for_cooking_at_recipe/2022/02/17/2a5d03b55564b0b74235_3.png",
+    "recipe": 3
+  }
+},
+{
+  "model": "book_of_recipes.stepcookingatrecipe",
+  "pk": 14,
+  "fields": {
+    "name": "Шаг приготовления по рецепту 4",
+    "description": "Приятного аппетита!",
+    "slug": "3-shag-prigotovleniya-po-receptu-4",
+    "image": "images_of_steps_for_cooking_at_recipe/2022/02/17/2a5d03b55564b0b74235_4.jpg",
+    "recipe": 3
+  }
+}
+]
