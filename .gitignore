@@ -1,0 +1,12 @@
+# Byte-compiled / optimized / DLL files
+__pycache__
+# dotenv
+.env
+# virtualenv
+.venv
+
+*.pyc
+media/
+# pyenv
+.python-version
+db.sqlite3
