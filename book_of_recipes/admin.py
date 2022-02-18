@@ -63,11 +63,11 @@ class CategoryAdmin(admin.ModelAdmin):
 
 @admin.register(Ingredient)
 class IngredientAdmin(admin.ModelAdmin):
-    list_display = ('name', 'slug', 'description', 'archive')
+    list_display = ('name', 'slug', 'description')
     fields = (
         ('name', 'slug'),
         'description',
-        ('quantity', 'unit_of_measurement', 'archive')
+        ('quantity', 'unit_of_measurement')
     )
     prepopulated_fields = {'slug': ('name', 'quantity', 'unit_of_measurement')}
 

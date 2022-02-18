@@ -253,21 +253,12 @@ nav a:focus,
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 /*content*/
 
-.vehicle-images,
-.vehicle,
-.vehicles,
-.dealer,
-.dealer-center,
-.dealer-centers,
 .recipe,
 .step-for-cooking-at-recipe {
 	display: flex;
 	flex-direction: column;
 }
 
-.dealer,
-.dealer-center,
-.dealer-centers,
 .recipe,
 .step-for-cooking-at-recipe {
     border-style: solid;
@@ -277,53 +268,26 @@ nav a:focus,
     border-color: #FAF0E6;
 }
 
-.dealer ul,
-.dealer-centers ul {
-    list-style: circle;
-}
-
-.dealer ul {
-    padding: 0;
-}
-
-.dealer-centers ul {
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!add!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+div .right > ul,
+ul.recipe-detail-ingredients {
+    /*margin-left: .5rem;*/
     padding-left: 1rem;
+    list-style: none;
+    list-style-type: "\2705";
 }
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!add!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*ul {
+  padding-left: 2rem;
+  list-style-type: none;
+}*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!add!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
-.img-main,
-.img-additional {
-	margin-bottom: 0.5rem;
-}
-
-.img-dealer-centers {
-    width: 100%;
-    height: 40vw;
-}
-
-.vehicle-image-main {
 /*
 order определяет порядок, используемый для размещения flex элементов в их flex контейнере.
 Элементы располагаются в восходящем порядке по значению order.
 Элементы с одинаковым значением order  располагаются в том порядке, в каком они находятся в исходном коде
 */
-	order: 1;
-}
-
-.vehicle-images-additional-1 {
-	order: 2;
-}
-
-.vehicle-images-additional-2 {
-	order: 3;
-}
-
-.vehicle-main,
-.dealer-main,
-.dealer-center-main,
-.dealer-centers-main {
-    order: 2;
-}
-
 .recipe div.left,
 .step-for-cooking-at-recipe div.left {
     order: 1
@@ -531,6 +495,15 @@ pointer: Указатель, обозначающий ссылку, обычно
     .recipe div.left {   /*!!!!!!!!!!!!!change!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
         width: 60%;
     }
+
+    .step-for-cooking-at-recipe div.right {  /*!!!!!!!!!!!!!adding recently!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+        width: 48.5%;
+    }
+
+    .step-for-cooking-at-recipe div.left {   /*!!!!!!!!!!!!!adding recently!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+        width: 48.5%;
+    }
+
 
 }
 

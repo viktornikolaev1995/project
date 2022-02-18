@@ -1,14 +1,19 @@
 {% extends "book_of_recipes/base.html" %}
 {% block content %}
 <h2>{{recipe.name}}</h2>
-<a href="{% url 'recipes_at_category' slug=recipe.category.slug %}"><h3>{{recipe.category.name}}</h3></a>
 <img src="{{recipe.image.url}}" class="img-main">
 <h2>Ингредиенты</h2>
+<ul class="recipe-detail-ingredients">
 {% for ingredient in recipe.ingredients.all %}
-    <p>{{ingredient.name}}-{{ingredient.quantity}} {{ingredient.unit_of_measurement}}</p>
+    {% if ingredient.quantity and ingredient.unit_of_measurement %}
+        <li>{{ingredient.name}}-{{ingredient.quantity}} {{ingredient.unit_of_measurement}}</li>
+    {% else %}
+        <li>{{ingredient.name}}</li>
+    {% endif %}
 {% endfor %}
+</ul>
 <h3>Способ приготовления</h3>
-{% for step in recipe.steps_for_cooking_at_recipe.all %}
+{% for step in recipe.steps_cooking_at_recipe.all %}
     <article class="step-for-cooking-at-recipe">
         <div class="left">
             <img src="{{step.image.url}}" class="img-additional">

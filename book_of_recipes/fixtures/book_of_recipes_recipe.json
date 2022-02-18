@@ -9,7 +9,7 @@
     "image": "recipes/ajdfaiweo134oijwe.jpg",
     "category": 1,
     "cooking_time": "1 час",
-    "user": null,
+    "user": 2,
     "archive": false,
     "date_created": "2022-02-17T20:31:58.647Z",
     "date_update": "2022-02-17T20:31:58.647Z",
@@ -42,7 +42,7 @@
     "image": "recipes/e098419343061a5.jpg",
     "category": 1,
     "cooking_time": "30 минут",
-    "user": null,
+    "user": 2,
     "archive": false,
     "date_created": "2022-02-17T20:31:58.647Z",
     "date_update": "2022-02-17T20:31:58.647Z",
@@ -75,7 +75,7 @@
     "image": "recipes/2a5d03b55564b0b74235.jpg",
     "category": 2,
     "cooking_time": "15 минут",
-    "user": null,
+    "user": 3,
     "archive": false,
     "date_created": "2022-02-17T20:31:58.647Z",
     "date_update": "2022-02-17T20:31:58.647Z",
@@ -86,6 +86,57 @@
       31,
       32,
       33
+    ]
+  }
+},
+{
+  "model": "book_of_recipes.recipe",
+  "pk": 4,
+  "fields": {
+    "name": "Фрукты с облепиховым кремом",
+    "description": "",
+    "slug": "frukty-s-oblepihovym-kremom",
+    "image": "recipes/s0sdf41sd3061a5.jpg",
+    "category": 2,
+    "cooking_time": "15 минут",
+    "user": 3,
+    "archive": false,
+    "date_created": "2022-02-17T20:31:58.647Z",
+    "date_update": "2022-02-17T20:31:58.647Z",
+    "ingredients": [
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+    ]
+  }
+},
+{
+  "model": "book_of_recipes.recipe",
+  "pk": 5,
+  "fields": {
+    "name": "Греческий салат",
+    "description": "",
+    "slug": "grecheskij-salat",
+    "image": "recipes/4ab50340a8513c9fbf4.png",
+    "category": 3,
+    "cooking_time": "15 минут",
+    "user": 4,
+    "archive": false,
+    "date_created": "2022-02-17T20:31:58.647Z",
+    "date_update": "2022-02-17T20:31:58.647Z",
+    "ingredients": [
+      7,
+      9,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46
     ]
   }
 }

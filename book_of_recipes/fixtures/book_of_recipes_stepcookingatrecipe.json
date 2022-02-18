@@ -152,5 +152,71 @@
     "image": "images_of_steps_for_cooking_at_recipe/2022/02/17/2a5d03b55564b0b74235_4.jpg",
     "recipe": 3
   }
+},
+{
+  "model": "book_of_recipes.stepcookingatrecipe",
+  "pk": 15,
+  "fields": {
+    "name": "Шаг приготовления по рецепту 1",
+    "description": "Отделяем желтки от белков, размешиваем, вводим сахарный песок, объединяем, ставим на водяную баню и взбиваем 2 минуты.",
+    "slug": "4-shag-prigotovleniya-po-receptu-1",
+    "image": "images_of_steps_for_cooking_at_recipe/2022/02/17/s0sdf41sd3061a5_1.png",
+    "recipe": 4
+  }
+},
+{
+  "model": "book_of_recipes.stepcookingatrecipe",
+  "pk": 16,
+  "fields": {
+    "name": "Шаг приготовления по рецепту 2",
+    "description": "Вливаем сладкое десертное вино. Облепиху протираем через сито и полученный сок вводим в соус.",
+    "slug": "4-shag-prigotovleniya-po-receptu-2",
+    "image": "images_of_steps_for_cooking_at_recipe/2022/02/17/s0sdf41sd3061a5_2.png",
+    "recipe": 4
+  }
+},
+{
+  "model": "book_of_recipes.stepcookingatrecipe",
+  "pk": 17,
+  "fields": {
+    "name": "Шаг приготовления по рецепту 3",
+    "description": "Переливаем в вазочку. Клубнику и банан нанизываем на шпажки. Приятного аппетита!",
+    "slug": "4-shag-prigotovleniya-po-receptu-3",
+    "image": "images_of_steps_for_cooking_at_recipe/2022/02/17/s0sdf41sd3061a5_3.jpg",
+    "recipe": 4
+  }
+},
+{
+  "model": "book_of_recipes.stepcookingatrecipe",
+  "pk": 18,
+  "fields": {
+    "name": "Шаг приготовления по рецепту 1",
+    "description": "Нарезаем овощи и добавляем их в миску в следующей последовательности: помидоры, огурец, лук и перец. Теперь добавляем оливки.",
+    "slug": "5-shag-prigotovleniya-po-receptu-1",
+    "image": "images_of_steps_for_cooking_at_recipe/2022/02/17/4ab50340a8513c9fbf4_1.png",
+    "recipe": 5
+  }
+},
+{
+  "model": "book_of_recipes.stepcookingatrecipe",
+  "pk": 19,
+  "fields": {
+    "name": "Шаг приготовления по рецепту 2",
+    "description": "Сверху выкладываем цельный кусок феты и поливаем салат оливковым маслом и посыпаем сухим орегано.",
+    "slug": "5-shag-prigotovleniya-po-receptu-2",
+    "image": "images_of_steps_for_cooking_at_recipe/2022/02/17/4ab50340a8513c9fbf4_2.png",
+    "recipe": 5
+  }
+},
+{
+  "model": "book_of_recipes.stepcookingatrecipe",
+  "pk": 20,
+  "fields": {
+    "name": "Шаг приготовления по рецепту 3",
+    "description": "При подаче разминаем фету ложкой и смешиваем с салатом. Приятного аппетита!",
+    "slug": "5-shag-prigotovleniya-po-receptu-3",
+    "image": "images_of_steps_for_cooking_at_recipe/2022/02/17/4ab50340a8513c9fbf4_3.png",
+    "recipe": 5
+  }
 }
 ]

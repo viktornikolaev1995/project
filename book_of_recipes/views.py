@@ -1,3 +1,4 @@
+from django.contrib.auth.models import User
 from django.http import Http404
 from django.shortcuts import render
 from django.views.generic import ListView, DetailView
@@ -20,6 +21,7 @@ class RecipeList(ListView):
         context = super().get_context_data(**kwargs)
         context['title'] = 'Рецепты со всего мира'
         context['categories'] = Category.objects.all()
+        context['users'] = User.objects.all()
         return context
 
 

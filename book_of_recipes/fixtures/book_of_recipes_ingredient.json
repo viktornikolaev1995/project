@@ -6,7 +6,6 @@
     "name": "крылышки индейки",
     "description": "",
     "slug": "krylyshki-indejki-2-sht",
-    "archive": false,
     "quantity": "2",
     "unit_of_measurement": "шт."
   }
@@ -18,7 +17,6 @@
     "name": "лук репчатый",
     "description": "",
     "slug": "luk-repchatyj-1-sht",
-    "archive": false,
     "quantity": "1",
     "unit_of_measurement": "шт."
   }
@@ -30,7 +28,6 @@
     "name": "морковь",
     "description": "",
     "slug": "morkov-05-sht",
-    "archive": false,
     "quantity": "0.5",
     "unit_of_measurement": "шт."
   }
@@ -42,7 +39,6 @@
     "name": "стебель сельдерея",
     "description": "",
     "slug": "stebel-seldereya-1-sht",
-    "archive": false,
     "quantity": "1",
     "unit_of_measurement": "шт."
   }
@@ -54,7 +50,6 @@
     "name": "гвоздика",
     "description": "",
     "slug": "gvozdika-4-sht",
-    "archive": false,
     "quantity": "4",
     "unit_of_measurement": "шт."
   }
@@ -66,7 +61,6 @@
     "name": "лавровый лист",
     "description": "",
     "slug": "lavrovyj-list-1-sht",
-    "archive": false,
     "quantity": "1",
     "unit_of_measurement": "шт."
   }
@@ -78,7 +72,6 @@
     "name": "соль",
     "description": "",
     "slug": "sol",
-    "archive": false,
     "quantity": null,
     "unit_of_measurement": null
   }
@@ -90,7 +83,6 @@
     "name": "вода",
     "description": "",
     "slug": "voda",
-    "archive": false,
     "quantity": null,
     "unit_of_measurement": null
   }
@@ -102,7 +94,6 @@
     "name": "помидор",
     "description": "",
     "slug": "pomidor-2-sht",
-    "archive": false,
     "quantity": "2",
     "unit_of_measurement": "шт."
   }
@@ -114,7 +105,6 @@
     "name": "чеснок",
     "description": "",
     "slug": "chesnok-1-sht",
-    "archive": false,
     "quantity": "1",
     "unit_of_measurement": "шт."
   }
@@ -126,7 +116,6 @@
     "name": "масло оливковое",
     "description": "",
     "slug": "maslo-olivkovoe",
-    "archive": false,
     "quantity": null,
     "unit_of_measurement": null
   }
@@ -138,7 +127,6 @@
     "name": "черный перец",
     "description": "",
     "slug": "chernyj-perec",
-    "archive": false,
     "quantity": null,
     "unit_of_measurement": null
   }
@@ -150,7 +138,6 @@
     "name": "сахар",
     "description": "",
     "slug": "sahar",
-    "archive": false,
     "quantity": null,
     "unit_of_measurement": null
   }
@@ -162,7 +149,6 @@
     "name": "острая паприка",
     "description": "",
     "slug": "ostraya-paprika",
-    "archive": false,
     "quantity": null,
     "unit_of_measurement": null
   }
@@ -174,7 +160,6 @@
     "name": "зелень",
     "description": "",
     "slug": "zelen",
-    "archive": false,
     "quantity": null,
     "unit_of_measurement": null
   }
@@ -186,7 +171,6 @@
     "name": "чечевица красная",
     "description": "",
     "slug": "chechevica-krasnaya-200-g",
-    "archive": false,
     "quantity": "200",
     "unit_of_measurement": "г"
   }
@@ -198,7 +182,6 @@
     "name": "креветки",
     "description": "",
     "slug": "krevetki-10-sht",
-    "archive": false,
     "quantity": "10",
     "unit_of_measurement": "шт."
   }
@@ -210,7 +193,6 @@
     "name": "морковь",
     "description": "",
     "slug": "morkov-1-sht",
-    "archive": false,
     "quantity": "1",
     "unit_of_measurement": "шт."
   }
@@ -222,7 +204,6 @@
     "name": "масло растительное",
     "description": "",
     "slug": "maslo-rastitelnoe",
-    "archive": false,
     "quantity": null,
     "unit_of_measurement": null
   }
@@ -234,7 +215,6 @@
     "name": "чеснок",
     "description": "",
     "slug": "chesnok-2-sht",
-    "archive": false,
     "quantity": "2",
     "unit_of_measurement": "шт."
   }
@@ -246,7 +226,6 @@
     "name": "перец кайенский молотый",
     "description": "",
     "slug": "perec-kajenskij-molotyj",
-    "archive": false,
     "quantity": null,
     "unit_of_measurement": null
   }
@@ -258,7 +237,6 @@
     "name": "лайм",
     "description": "",
     "slug": "lajm",
-    "archive": false,
     "quantity": null,
     "unit_of_measurement": null
   }
@@ -270,7 +248,6 @@
     "name": "кориандр",
     "description": "",
     "slug": "koriandr",
-    "archive": false,
     "quantity": null,
     "unit_of_measurement": null
   }
@@ -282,7 +259,6 @@
     "name": "кумин",
     "description": "",
     "slug": "kumin",
-    "archive": false,
     "quantity": null,
     "unit_of_measurement": null
   }
@@ -294,7 +270,6 @@
     "name": "карри",
     "description": "",
     "slug": "karri",
-    "archive": false,
     "quantity": null,
     "unit_of_measurement": null
   }
@@ -306,7 +281,6 @@
     "name": "кинза",
     "description": "",
     "slug": "kinza",
-    "archive": false,
     "quantity": null,
     "unit_of_measurement": null
   }
@@ -318,7 +292,6 @@
     "name": "йогурт",
     "description": "",
     "slug": "jogurt",
-    "archive": false,
     "quantity": null,
     "unit_of_measurement": null
   }
@@ -330,7 +303,6 @@
     "name": "финики",
     "description": "",
     "slug": "finiki",
-    "archive": false,
     "quantity": "100",
     "unit_of_measurement": "г"
   }
@@ -342,7 +314,6 @@
     "name": "орехи кешью",
     "description": "",
     "slug": "orehi-keshyu",
-    "archive": false,
     "quantity": "100",
     "unit_of_measurement": "г"
   }
@@ -354,7 +325,6 @@
     "name": "миндаль",
     "description": "",
     "slug": "mindal",
-    "archive": false,
     "quantity": "100",
     "unit_of_measurement": "г"
   }
@@ -366,7 +336,6 @@
     "name": "мёд",
     "description": "",
     "slug": "myod",
-    "archive": false,
     "quantity": "4",
     "unit_of_measurement": "ч.л."
   }
@@ -378,7 +347,6 @@
     "name": "какао",
     "description": "",
     "slug": "kakao",
-    "archive": false,
     "quantity": null,
     "unit_of_measurement": null
   }
@@ -390,7 +358,149 @@
     "name": "кокосовая стружка",
     "description": "",
     "slug": "kokosovaya-struzhka",
-    "archive": false,
+    "quantity": null,
+    "unit_of_measurement": null
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 34,
+  "fields": {
+    "name": "яйца",
+    "description": "",
+    "slug": "yajca-3-sht",
+    "quantity": "3",
+    "unit_of_measurement": "шт."
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 35,
+  "fields": {
+    "name": "сахар",
+    "description": "",
+    "slug": "sahar-7-chl",
+    "quantity": "7",
+    "unit_of_measurement": "ч.л."
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 36,
+  "fields": {
+    "name": "вино",
+    "description": "",
+    "slug": "vino-50-ml",
+    "quantity": "50",
+    "unit_of_measurement": "мл"
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 37,
+  "fields": {
+    "name": "облепиха мороженая",
+    "description": "",
+    "slug": "oblepiha-morozhenaya",
+    "quantity": null,
+    "unit_of_measurement": null
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 38,
+  "fields": {
+    "name": "клубника",
+    "description": "",
+    "slug": "klubnika",
+    "quantity": null,
+    "unit_of_measurement": null
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 39,
+  "fields": {
+    "name": "банан",
+    "description": "",
+    "slug": "banan",
+    "quantity": null,
+    "unit_of_measurement": null
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 40,
+  "fields": {
+    "name": "сыр фета",
+    "description": "",
+    "slug": "syr-feta-200-g",
+    "quantity": "200",
+    "unit_of_measurement": "г"
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 41,
+  "fields": {
+    "name": "огурец",
+    "description": "",
+    "slug": "ogurec-2-sht",
+    "quantity": "2",
+    "unit_of_measurement": "шт."
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 42,
+  "fields": {
+    "name": "лук красный",
+    "description": "",
+    "slug": "luk-krasnyj-2-sht",
+    "quantity": "2",
+    "unit_of_measurement": "шт."
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 43,
+  "fields": {
+    "name": "перец болгарский",
+    "description": "",
+    "slug": "perec-bolgarskij-1-sht",
+    "quantity": "1",
+    "unit_of_measurement": "шт."
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 44,
+  "fields": {
+    "name": "оливки",
+    "description": "",
+    "slug": "olivki-100-g",
+    "quantity": "100",
+    "unit_of_measurement": "г"
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 45,
+  "fields": {
+    "name": "масло оливковое",
+    "description": "",
+    "slug": "maslo-olivkovoe-30-ml",
+    "quantity": "30",
+    "unit_of_measurement": "мл"
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 46,
+  "fields": {
+    "name": "орегано",
+    "description": "",
+    "slug": "oregano",
     "quantity": null,
     "unit_of_measurement": null
   }

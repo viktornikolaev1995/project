@@ -1,5 +1,8 @@
 {% extends "book_of_recipes/base.html" %}
 {% block content %}
+{% for user in users %}
+<p>id: {{user.id}}, pk: {{user.pk}} first_name: {{user.first_name}}, last_name: {{user.last_name}}</p>
+{% endfor %}
     {% for recipe in recipes %}
         {% url 'recipe' slug=recipe.category.slug slug1=recipe.slug as the_url %}
         <article class="recipe">
@@ -8,16 +11,27 @@
                 <img src="{{recipe.image.url}}" class="recipe-image-main">
             </div>
             <div class="right">
-                <h3>Ингредиенты</h3>
+                <h3>Автор: {{recipe.user.id}} {{recipe.user.pk}} {{recipe.user.first_name}} {{recipe.user.last_name}}</h3>
+                <h3>Ингредиенты:</h3>
+                <ul>
                 {% if recipe.ingredients.all|length < 6 %}
                     {% for ingredient in recipe.ingredients.all %}
-                        <p>{{ingredient.name}}-{{ingredient.quantity}} {{ingredient.unit_of_measurement}}</p>
+                        {% if ingredient.quantity and ingredient.unit_of_measurement %}
+                            <li>{{ingredient.name}}-{{ingredient.quantity}} {{ingredient.unit_of_measurement}}</li>
+                        {% else %}
+                            <li>{{ingredient.name}}</li>
+                        {% endif %}
                     {% endfor %}
                 {% else %}
                     {% for ingredient in recipe.ingredients.all|slice:":6" %}
-                        <p>{{ingredient.name}}-{{ingredient.quantity}} {{ingredient.unit_of_measurement}}</p>
+                        {% if ingredient.quantity and ingredient.unit_of_measurement %}
+                            <li>{{ingredient.name}}-{{ingredient.quantity}} {{ingredient.unit_of_measurement}}</li>
+                        {% else %}
+                            <li>{{ingredient.name}}</li>
+                        {% endif %}
                     {% endfor %}
                 {% endif %}
+                </ul>
                 <a href={{the_url}}><p>Посмотреть весь список ингредиентов</p></a>
             </div>
         </article>

@@ -70,5 +70,53 @@
     "parent": null,
     "recipe": 3
   }
+},
+{
+  "model": "book_of_recipes.recipecomments",
+  "pk": 7,
+  "fields": {
+    "name": "Регина",
+    "text": "Понравилось, можно готовить на праздники",
+    "email": "reginavolkova1997@gmail.ru",
+    "pub_date": "2022-02-17T20:33:50.874Z",
+    "parent": null,
+    "recipe": 4
+  }
+},
+{
+  "model": "book_of_recipes.recipecomments",
+  "pk": 8,
+  "fields": {
+    "name": "Арина",
+    "text": "Мне тоже понравилось, вполне себе неплохо получилось",
+    "email": "arinamedvedkova1990@gmail.ru",
+    "pub_date": "2022-02-17T20:33:50.874Z",
+    "parent": 7,
+    "recipe": 4
+  }
+},
+{
+  "model": "book_of_recipes.recipecomments",
+  "pk": 9,
+  "fields": {
+    "name": "Андрей",
+    "text": "Для меня было немного необычное сочетание, но определенно все вкусно. Спасибо.",
+    "email": "andreimorozov1993@gmail.ru",
+    "pub_date": "2022-02-17T20:33:50.874Z",
+    "parent": null,
+    "recipe": 5
+  }
+},
+{
+  "model": "book_of_recipes.recipecomments",
+  "pk": 10,
+  "fields": {
+    "name": "Арина",
+    "text": "А мне как-то не понравилось совсем",
+    "email": "arinamedvedkova1990@gmail.ru",
+    "pub_date": "2022-02-17T20:33:50.874Z",
+    "parent": 9,
+    "recipe": 5
+  }
 }
 ]

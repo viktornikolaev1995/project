@@ -1,11 +1,12 @@
 from django.contrib.auth.models import User
+from django.core.exceptions import ValidationError
 from django.db import models
 from django.urls import reverse
 
 
-class Category(models.Model):
-    """Категория рецептов"""
-    name = models.CharField(max_length=150, verbose_name='Категория')
+class CommonInfo(models.Model):
+    """Общая информация"""
+    name = models.CharField(max_length=150, verbose_name='Наименование')
     description = models.TextField(verbose_name='Описание', blank=True)
     slug = models.SlugField(unique=True, verbose_name='Слаг')
 
@@ -13,22 +14,27 @@ class Category(models.Model):
         return self.name
 
     class Meta:
+        abstract = True
+
+
+class Category(CommonInfo):
+    """Категория рецептов"""
+
+    class Meta:
         verbose_name = 'Категория'
         verbose_name_plural = 'Категории'
 
 
-class Recipe(models.Model):
+class Recipe(CommonInfo):
     """Рецепт"""
 
-    name = models.CharField(max_length=255, verbose_name='Наименование')
-    description = models.TextField(verbose_name='Описание', blank=True)
-    slug = models.SlugField(unique=True, verbose_name='Слаг')
     image = models.ImageField(upload_to='recipes/', verbose_name='Изображение', blank=True, null=True)
     category = models.ForeignKey(
         Category,
         verbose_name='Категория',
-        on_delete=models.PROTECT,
-        related_name='recipe_category',
+        on_delete=models.SET_NULL,
+        related_name='recipes',
+        related_query_name='recipe',
         blank=True,
         null=True
     )
@@ -37,10 +43,12 @@ class Recipe(models.Model):
         verbose_name='Ингредиенты'
     )
     cooking_time = models.CharField(max_length=100, verbose_name='Время приготовления')
-    user = models.OneToOneField(
+    user = models.ForeignKey(
         User,
         verbose_name='Автор',
         on_delete=models.SET_NULL,
+        related_name='recipes',
+        related_query_name='recipe',
         blank=True,
         null=True
     )
@@ -52,17 +60,15 @@ class Recipe(models.Model):
         verbose_name = 'Рецепт'
         verbose_name_plural = 'Рецепты'
 
-    def __str__(self):
-        return self.name
 
-
-class Ingredient(models.Model):
+class Ingredient(CommonInfo):
     """Ингредиент"""
     KILOGRAM = 'кг'
     GRAM = 'г'
     LITRE = 'л'
     MILLILITRE = 'мл'
     PIECE = 'шт.'
+    TABLESPOON = 'ст.л.'
     TEASPOON = 'ч.л.'
 
     UNIT_OF_MEASUREMENT_CHOICES = [
@@ -71,21 +77,21 @@ class Ingredient(models.Model):
         (LITRE, 'л'),
         (MILLILITRE, 'мл'),
         (PIECE, 'шт.'),
+        (TABLESPOON, 'ст.л.'),
         (TEASPOON, 'ч.л.'),
     ]
-    name = models.CharField(max_length=150, verbose_name='Наименование')
-    description = models.TextField(verbose_name='Описание', blank=True)
-    slug = models.SlugField(unique=True, verbose_name='Слаг')
-    archive = models.BooleanField(default=False, verbose_name='Архив')
-    quantity = models.CharField(max_length=50, verbose_name='Количество', blank=True, null=True)
 
-    unit_of_measurement = models.CharField(
-        max_length=10,
-        choices=UNIT_OF_MEASUREMENT_CHOICES,
-        verbose_name='Единица измерения',
-        blank=True,
-        null=True
-    )
+    quantity = models.CharField(max_length=50, verbose_name='Количество', blank=True, null=True)
+    unit_of_measurement = models.CharField(max_length=10, choices=UNIT_OF_MEASUREMENT_CHOICES,
+                                           verbose_name='Единица измерения', blank=True, null=True)
+
+    def clean(self):
+        """
+        Checks, that we do not create multiple ingredients with
+        no quantity and the same name of ingredient.
+        """
+        if self.quantity is None and Ingredient.objects.filter(name=self.name, quantity__isnull=True).exists():
+            raise ValidationError("Another Ingredient with name=%s and no quantity already exists" % self.name)
 
     def __str__(self):
         if self.quantity and self.unit_of_measurement:
@@ -95,27 +101,23 @@ class Ingredient(models.Model):
     class Meta:
         verbose_name = 'Ингредиент'
         verbose_name_plural = 'Ингредиенты'
+        unique_together = ['name', 'quantity', 'unit_of_measurement']
 
 
-class StepCookingAtRecipe(models.Model):
+class StepCookingAtRecipe(CommonInfo):
     """Шаг приготовления по рецепту"""
 
-    name = models.CharField(max_length=255, verbose_name='Наименование')
-    description = models.TextField(verbose_name='Описание', blank=True)
-    slug = models.SlugField(unique=True, verbose_name='Слаг')
     image = models.ImageField(upload_to='images_of_steps_for_cooking_at_recipe/%Y/%m/%d/', verbose_name='Изображение',
                               blank=True, null=True)
     recipe = models.ForeignKey(
         Recipe,
         on_delete=models.CASCADE,
         verbose_name='Рецепт',
-        related_name='steps_for_cooking_at_recipe',
+        related_name='steps_cooking_at_recipe',
+        related_query_name='step_cooking_at_recipe',
         blank=True,
         null=True
     )
-
-    def __str__(self):
-        return self.name
 
     class Meta:
         verbose_name = 'Шаг приготовления по рецепту'
@@ -126,9 +128,9 @@ class RecipeComments(models.Model):
     """Комментарии к рецепту"""
 
     name = models.CharField(max_length=255, verbose_name='Имя')
-    text = models.TextField(max_length=2500, verbose_name='Текст отзыва')
+    text = models.TextField(max_length=1000, verbose_name='Текст комментария')
     email = models.EmailField(verbose_name='Почта')
-    pub_date = models.DateTimeField(auto_now_add=True, verbose_name='Дата написания отзыва')
+    pub_date = models.DateTimeField(auto_now_add=True, verbose_name='Дата написания комментария')
     parent = models.ForeignKey(
         'self',
         on_delete=models.CASCADE,
@@ -141,7 +143,8 @@ class RecipeComments(models.Model):
         Recipe,
         on_delete=models.CASCADE,
         verbose_name='Рецепт',
-        related_name='recipe_review'
+        related_name='recipe_comments',
+        related_query_name='recipe_comment',
     )
 
     def get_all_children(self):
