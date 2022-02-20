@@ -1,40 +1,47 @@
 {% extends "book_of_recipes/base.html" %}
-{% block content %}
-{% for user in users %}
-<p>id: {{user.id}}, pk: {{user.pk}} first_name: {{user.first_name}}, last_name: {{user.last_name}}</p>
-{% endfor %}
-    {% for recipe in recipes %}
-        {% url 'recipe' slug=recipe.category.slug slug1=recipe.slug as the_url %}
-        <article class="recipe">
-            <div class="left">
-                <a href={{the_url}}><h2>{{recipe.name}}</h2></a>
-                <img src="{{recipe.image.url}}" class="recipe-image-main">
-            </div>
-            <div class="right">
-                <h3>Автор: {{recipe.user.id}} {{recipe.user.pk}} {{recipe.user.first_name}} {{recipe.user.last_name}}</h3>
-                <h3>Ингредиенты:</h3>
-                <ul>
-                {% if recipe.ingredients.all|length < 6 %}
-                    {% for ingredient in recipe.ingredients.all %}
-                        {% if ingredient.quantity and ingredient.unit_of_measurement %}
-                            <li>{{ingredient.name}}-{{ingredient.quantity}} {{ingredient.unit_of_measurement}}</li>
-                        {% else %}
-                            <li>{{ingredient.name}}</li>
-                        {% endif %}
-                    {% endfor %}
-                {% else %}
-                    {% for ingredient in recipe.ingredients.all|slice:":6" %}
-                        {% if ingredient.quantity and ingredient.unit_of_measurement %}
-                            <li>{{ingredient.name}}-{{ingredient.quantity}} {{ingredient.unit_of_measurement}}</li>
-                        {% else %}
-                            <li>{{ingredient.name}}</li>
-                        {% endif %}
-                    {% endfor %}
-                {% endif %}
-                </ul>
-                <a href={{the_url}}><p>Посмотреть весь список ингредиентов</p></a>
-            </div>
-        </article>
+{% load static %}
 
-    {% endfor %}
+{% block style %}
+<link rel="stylesheet" type="text/css" href="{% static 'book_of_recipes/css/base_list.css' %}">
+{% endblock %}
+
+{% block sidebar_left %}
+{% include 'book_of_recipes/sidebar.html' %}
+{% endblock %}
+
+{% block content %}
+{% for recipe in recipes %}
+    {% url 'recipe' slug=recipe.category.slug slug1=recipe.slug as the_url %}
+    <article class="recipe">
+        <div class="left">
+            <a href={{the_url}}><h2 class="name-of-recipe">{{recipe.name}}</h2></a>
+            <img src="{{recipe.image.url}}" class="recipe-image-main">
+        </div>
+        <div class="right">
+            <h3>Автор: {{recipe.user.first_name}} {{recipe.user.last_name}}</h3>
+            <h3>Ингредиенты:</h3>
+            <ul>
+            {% if recipe.ingredients.all|length < 6 %}
+                {% for ingredient in recipe.ingredients.all %}
+                    {% if ingredient.quantity and ingredient.unit_of_measurement %}
+                        <li>{{ingredient.name}}-{{ingredient.quantity}} {{ingredient.unit_of_measurement}}</li>
+                    {% else %}
+                        <li>{{ingredient.name}}</li>
+                    {% endif %}
+                {% endfor %}
+            {% else %}
+                {% for ingredient in recipe.ingredients.all|slice:":6" %}
+                    {% if ingredient.quantity and ingredient.unit_of_measurement %}
+                        <li>{{ingredient.name}}-{{ingredient.quantity}} {{ingredient.unit_of_measurement}}</li>
+                    {% else %}
+                        <li>{{ingredient.name}}</li>
+                    {% endif %}
+                {% endfor %}
+            {% endif %}
+            </ul>
+            <a href={{the_url}}><p>Посмотреть весь список ингредиентов</p></a>
+            <p>Время приготовления: {{recipe.cooking_time}}</p>
+        </div>
+    </article>
+{% endfor %}
 {% endblock %}

@@ -1,0 +1,15 @@
+<aside>
+<div class="filter-recipes-at-ingredients">
+    <form action="{% url 'filter_recipes_at_ingredients' %}" method="get">
+      <ul>
+      {% for ingredient in ingredients %}
+          <li>
+              <input type="checkbox" class="checked" name="ingredients" value="{{ ingredient }}">
+              <span>{{ ingredient }}</span>
+          </li>
+      {% endfor %}
+      </ul>
+    <button type="submit" class="btn btn-success">Поиск рецепта по ингредиентам</button>
+    </form>
+</div>
+</aside>

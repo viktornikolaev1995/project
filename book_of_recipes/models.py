@@ -28,11 +28,11 @@ class Category(CommonInfo):
 class Recipe(CommonInfo):
     """Рецепт"""
 
-    image = models.ImageField(upload_to='recipes/', verbose_name='Изображение', blank=True, null=True)
+    image = models.ImageField(upload_to='recipes/%Y/%m/%d/', verbose_name='Изображение', blank=True, null=True)
     category = models.ForeignKey(
         Category,
         verbose_name='Категория',
-        on_delete=models.SET_NULL,
+        on_delete=models.CASCADE,
         related_name='recipes',
         related_query_name='recipe',
         blank=True,
@@ -40,7 +40,8 @@ class Recipe(CommonInfo):
     )
     ingredients = models.ManyToManyField(
         'Ingredient',
-        verbose_name='Ингредиенты'
+        verbose_name='Ингредиенты',
+        related_name='recipes'
     )
     cooking_time = models.CharField(max_length=100, verbose_name='Время приготовления')
     user = models.ForeignKey(
@@ -59,6 +60,12 @@ class Recipe(CommonInfo):
     class Meta:
         verbose_name = 'Рецепт'
         verbose_name_plural = 'Рецепты'
+
+    def get_comments(self):
+        return RecipeComments.objects.select_related('recipe').filter(parent__isnull=True, recipe=self.pk)
+
+    def get_absolute_url(self):
+        return reverse('recipe', kwargs={'slug': self.category.slug, 'slug1': self.slug})
 
 
 class Ingredient(CommonInfo):
@@ -148,7 +155,7 @@ class RecipeComments(models.Model):
     )
 
     def get_all_children(self):
-        return RecipeComments.objects.filter(parent_id=self.pk).order_by('id')
+        return RecipeComments.objects.select_related('parent').filter(parent_id=self.pk).order_by('id')
 
     def __str__(self):
         return f'{self.name}-{self.recipe}'

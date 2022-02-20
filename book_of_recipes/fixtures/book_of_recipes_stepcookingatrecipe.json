@@ -218,5 +218,225 @@
     "image": "images_of_steps_for_cooking_at_recipe/2022/02/17/4ab50340a8513c9fbf4_3.png",
     "recipe": 5
   }
+},
+{
+  "model": "book_of_recipes.stepcookingatrecipe",
+  "pk": 21,
+  "fields": {
+    "name": "Шаг приготовления по рецепту 1",
+    "description": "Нарезаем отварное филе индейки небольшими кусочками, брынзу режем крупными кубиками.",
+    "slug": "6-shag-prigotovleniya-po-receptu-1",
+    "image": "images_of_steps_for_cooking_at_recipe/2022/02/17/fa72fe63df7bf4e22bca_1.jpg",
+    "recipe": 6
+  }
+},
+{
+  "model": "book_of_recipes.stepcookingatrecipe",
+  "pk": 22,
+  "fields": {
+    "name": "Шаг приготовления по рецепту 2",
+    "description": "Моем черный и белый виноград и отделяем ягоды от веточки. Разрезаем каждую ягоду на 2 половинки. По желанию можно удалить виноградные косточки, поддев их кончиком ножа. Грецкие орехи измельчаем ножом в крупную крошку. Оставляем несколько виноградин и немного ореховой крошки для украшения готового салата.",
+    "slug": "6-shag-prigotovleniya-po-receptu-2",
+    "image": "images_of_steps_for_cooking_at_recipe/2022/02/17/fa72fe63df7bf4e22bca_2.jpg",
+    "recipe": 6
+  }
+},
+{
+  "model": "book_of_recipes.stepcookingatrecipe",
+  "pk": 23,
+  "fields": {
+    "name": "Шаг приготовления по рецепту 3",
+    "description": "Добавляем в смесь натурального йогурта и майонеза горчицу и перемешиваем соус для салата ложкой.",
+    "slug": "6-shag-prigotovleniya-po-receptu-3",
+    "image": "images_of_steps_for_cooking_at_recipe/2022/02/17/fa72fe63df7bf4e22bca_3.jpg",
+    "recipe": 6
+  }
+},
+{
+  "model": "book_of_recipes.stepcookingatrecipe",
+  "pk": 24,
+  "fields": {
+    "name": "Шаг приготовления по рецепту 4",
+    "description": "Перекладываем в глубокую миску виноград, кусочки отварной индейки, ореховую крошку и соус.",
+    "slug": "6-shag-prigotovleniya-po-receptu-4",
+    "image": "images_of_steps_for_cooking_at_recipe/2022/02/17/fa72fe63df7bf4e22bca_4.jpg",
+    "recipe": 6
+  }
+},
+{
+  "model": "book_of_recipes.stepcookingatrecipe",
+  "pk": 25,
+  "fields": {
+    "name": "Шаг приготовления по рецепту 5",
+    "description": "Аккуратно перемешиваем салат ложкой, чтобы все ингредиенты равномерно пропитались соусом.",
+    "slug": "6-shag-prigotovleniya-po-receptu-5",
+    "image": "images_of_steps_for_cooking_at_recipe/2022/02/17/fa72fe63df7bf4e22bca_5.jpg",
+    "recipe": 6
+  }
+},
+{
+  "model": "book_of_recipes.stepcookingatrecipe",
+  "pk": 26,
+  "fields": {
+    "name": "Шаг приготовления по рецепту 6",
+    "description": "Раскладываем салат из индейки по порционным тарелкам, посыпаем ореховой крошкой и украшаем кубиками брынзы и виноградинами. Салат из индейки с виноградом и орехами готов. Приятного аппетита!",
+    "slug": "6-shag-prigotovleniya-po-receptu-6",
+    "image": "images_of_steps_for_cooking_at_recipe/2022/02/17/fa72fe63df7bf4e22bca_6.jpg",
+    "recipe": 6
+  }
+},
+{
+  "model": "book_of_recipes.stepcookingatrecipe",
+  "pk": 27,
+  "fields": {
+    "name": "Шаг приготовления по рецепту 1",
+    "description": "Отвариваем шпинат в течение минуты, затем сливаем воду. Шпинат остужаем и хорошо отжимаем.",
+    "slug": "7-shag-prigotovleniya-po-receptu-1",
+    "image": "images_of_steps_for_cooking_at_recipe/2022/02/17/9de06e9e0797aeae182e8_1.png",
+    "recipe": 7
+  }
+},
+{
+  "model": "book_of_recipes.stepcookingatrecipe",
+  "pk": 28,
+  "fields": {
+    "name": "Шаг приготовления по рецепту 2",
+    "description": "Чеснок очищаем. Через мясорубку пропускаем кинзу, чеснок, перец, фасоль и грецкие орехи.",
+    "slug": "7-shag-prigotovleniya-po-receptu-2",
+    "image": "images_of_steps_for_cooking_at_recipe/2022/02/17/9de06e9e0797aeae182e8_2.png",
+    "recipe": 7
+  }
+},
+{
+  "model": "book_of_recipes.stepcookingatrecipe",
+  "pk": 29,
+  "fields": {
+    "name": "Шаг приготовления по рецепту 3",
+    "description": "Солим ингредиенты. Добавляем винный уксус. Смешиваем компоненты.",
+    "slug": "7-shag-prigotovleniya-po-receptu-3",
+    "image": "images_of_steps_for_cooking_at_recipe/2022/02/17/9de06e9e0797aeae182e8_3.png",
+    "recipe": 7
+  }
+},
+{
+  "model": "book_of_recipes.stepcookingatrecipe",
+  "pk": 30,
+  "fields": {
+    "name": "Шаг приготовления по рецепту 4",
+    "description": "Подаем пхали в форме шариков. Приятного аппетита!",
+    "slug": "7-shag-prigotovleniya-po-receptu-4",
+    "image": "images_of_steps_for_cooking_at_recipe/2022/02/17/9de06e9e0797aeae182e8_4.png",
+    "recipe": 7
+  }
+},
+{
+  "model": "book_of_recipes.stepcookingatrecipe",
+  "pk": 31,
+  "fields": {
+    "name": "Шаг приготовления по рецепту 1",
+    "description": "Смешиваем рикотту, манку и муку. Оставляем на 15 минут.",
+    "slug": "8-shag-prigotovleniya-po-receptu-1",
+    "image": "images_of_steps_for_cooking_at_recipe/2022/02/17/28076a9b873a35ae8b_1.jpg",
+    "recipe": 8
+  }
+},
+{
+  "model": "book_of_recipes.stepcookingatrecipe",
+  "pk": 32,
+  "fields": {
+    "name": "Шаг приготовления по рецепту 2",
+    "description": "Добавляем голубику. Влажными руками сформовываем кубики из сырной массы и обваливаем в рисовой муке.",
+    "slug": "8-shag-prigotovleniya-po-receptu-2",
+    "image": "images_of_steps_for_cooking_at_recipe/2022/02/17/28076a9b873a35ae8b_2.jpg",
+    "recipe": 8
+  }
+},
+{
+  "model": "book_of_recipes.stepcookingatrecipe",
+  "pk": 33,
+  "fields": {
+    "name": "Шаг приготовления по рецепту 3",
+    "description": "Жарим на небольшом нагреве под крышкой со всех сторон до появления слегка золотистой корочки.",
+    "slug": "8-shag-prigotovleniya-po-receptu-3",
+    "image": "images_of_steps_for_cooking_at_recipe/2022/02/17/28076a9b873a35ae8b_3.jpg",
+    "recipe": 8
+  }
+},
+{
+  "model": "book_of_recipes.stepcookingatrecipe",
+  "pk": 34,
+  "fields": {
+    "name": "Шаг приготовления по рецепту 4",
+    "description": "Подаем с ягодами и мятой. Приятного аппетита!",
+    "slug": "8-shag-prigotovleniya-po-receptu-4",
+    "image": "images_of_steps_for_cooking_at_recipe/2022/02/17/28076a9b873a35ae8b_4.jpg",
+    "recipe": 8
+  }
+},
+{
+  "model": "book_of_recipes.stepcookingatrecipe",
+  "pk": 35,
+  "fields": {
+    "name": "Шаг приготовления по рецепту 1",
+    "description": "Очищаем чеснок и корень имбиря. Нарезаем имбирь соломкой, чеснок крупно нарубаем и помещаем в сотейник. Добавляем немного перца чили, 1 столовую ложку коричневого сахара, мед, заливаем смесь соевым соусом , ставим на нагрев и вливаем 10 мл мирина.",
+    "slug": "9-shag-prigotovleniya-po-receptu-1",
+    "image": "images_of_steps_for_cooking_at_recipe/2022/02/17/d4b17b209cc76f53212bb8_1.jpg",
+    "recipe": 9
+  }
+},
+{
+  "model": "book_of_recipes.stepcookingatrecipe",
+  "pk": 36,
+  "fields": {
+    "name": "Шаг приготовления по рецепту 2",
+    "description": "Срезаем цедру с ½ апельсина и помещаем в холодную воду, чтобы она отдала горечь. Выжимаем сок из половины апельсина, переливаем в сотейник и выпариваем до загустения. Добавляем выпаренный сок и апельсиновую цедру к соевому соусу, даем закипеть и вынимаем все ингредиенты — чеснок, имбирь, перец чили и цедру. Оставляем соус на нагреве.",
+    "slug": "9-shag-prigotovleniya-po-receptu-2",
+    "image": "images_of_steps_for_cooking_at_recipe/2022/02/17/d4b17b209cc76f53212bb8_2.jpg",
+    "recipe": 9
+  }
+},
+{
+  "model": "book_of_recipes.stepcookingatrecipe",
+  "pk": 37,
+  "fields": {
+    "name": "Шаг приготовления по рецепту 3",
+    "description": "Разбавляем холодной водой 2 столовые ложки крахмала и вливаем в соус небольшими порциями, чтобы он не стал слишком густым. Добавляем немного оливкового масла, перемешиваем и снимаем с нагрева.",
+    "slug": "9-shag-prigotovleniya-po-receptu-3",
+    "image": "images_of_steps_for_cooking_at_recipe/2022/02/17/d4b17b209cc76f53212bb8_3.jpg",
+    "recipe": 9
+  }
+},
+{
+  "model": "book_of_recipes.stepcookingatrecipe",
+  "pk": 38,
+  "fields": {
+    "name": "Шаг приготовления по рецепту 4",
+    "description": "Переливаем соус и подаем к столу охлажденным. Хорошо сочетается с хлебом, горячим рисом и является отличным маринадом для мяса и рыбы. Приятного аппетита!",
+    "slug": "9-shag-prigotovleniya-po-receptu-4",
+    "image": "images_of_steps_for_cooking_at_recipe/2022/02/17/d4b17b209cc76f53212bb8_4.jpg",
+    "recipe": 9
+  }
+},
+{
+  "model": "book_of_recipes.stepcookingatrecipe",
+  "pk": 39,
+  "fields": {
+    "name": "Шаг приготовления по рецепту 1",
+    "description": "Приготовим зелёную пасту карри. Удаляем семена у большей части перца и произвольно нарезаем. Измельчаем перец в ступке с сахаром, очищенным чесноком, кориандром, зирой и кинзой. Выкладываем в миску.",
+    "slug": "10-shag-prigotovleniya-po-receptu-1",
+    "image": "images_of_steps_for_cooking_at_recipe/2022/02/17/f43d6f8ad55983068ee49d_1.jpg",
+    "recipe": 10
+  }
+},
+{
+  "model": "book_of_recipes.stepcookingatrecipe",
+  "pk": 40,
+  "fields": {
+    "name": "Шаг приготовления по рецепту 2",
+    "description": "Приготовим соус. Нагреваем кокосовое молоко вместе с 2 ч. л. пасты. Снимаем с нагрева и добавляем рыбный соус. Перемешиваем и выкладываем в соусник. Соус хорош в сочетании с курицей и белой рыбой. Приятного аппетита!",
+    "slug": "10-shag-prigotovleniya-po-receptu-2",
+    "image": "images_of_steps_for_cooking_at_recipe/2022/02/17/f43d6f8ad55983068ee49d_2.jpg",
+    "recipe": 10
+  }
 }
 ]

@@ -3,9 +3,7 @@
 
 /*
 	Fonts
-	-----
 	font-family" 'Lora', serif;
-	font-family: 'Ubuntu', sans-serif;
 */
 
 body {
@@ -16,7 +14,7 @@ margin-left.
 */
 	margin: 0;
 	/*Устанавливает семейство шрифта, которое будет использоваться для оформления текста содержимого*/
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Lora', serif;
 	/*Определяет размер шрифта элемента
 Rem — это корневой em (Root Em). Он создан, чтобы облегчить вычислительные проблемы, с которыми многие иногда
 сталкиваются.
@@ -72,15 +70,27 @@ h5 {
 	color: #143774;
 }
 
+p,
+.filter-recipes-at-ingredients ul > li {
+	color: #143774;
+}
+
 h1,
 h2 {
-/*	font-size: 2rem;*/
 	margin: 0;
 }
 
 a {
-	color: #143774;/*#2F4F4F;*/
+	color: #143774;
 	text-decoration: none;
+}
+
+h2.name-of-recipe {
+    margin-bottom: .75rem;
+}
+
+h2.ingredients {
+    margin-top: .75rem;
 }
 
 /*
@@ -123,9 +133,10 @@ strong {
   	margin: 0;
 }
 
-
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!change!!!!!!!!!!!!!!!!!!!*/
 .container {
-	width: 95%;
+	width: 100%;
+
 /*
 margin CSS определяет внешний отступ на всех четырёх сторонах элемента.
 Это сокращение, которое устанавливает все отдельные поля одновременно: margin-top, margin-right, margin-bottom и
@@ -151,7 +162,6 @@ margin: 2em auto;           верх и низ: отступ 2em
 margin: auto;               верх и низ: отступ 0
                             блок отцентрирован горизонтально
                             */
-
 }
 
 .container-flex {
@@ -173,12 +183,11 @@ header {
 	background: #f8f8f8;
 	padding: 2rem 0;
 	text-align: center;
-	margin-bottom: 2rem;
+	margin-bottom: 2rem; /*отступ navbar от main*/
 }
 
 /*navigation*/
-
-nav ul {
+nav {
 /*
 list-style позволяет одновременно задать стиль маркера, его положение, а также изображение, которое будет
 использоваться в качестве маркера списка
@@ -189,23 +198,30 @@ padding устанавливает внутренние отступы/поля 
 Область отступов это пространство между содержанием элемента и его границей.
 Отрицательные значения не допускаются.
 */
-	padding: 0;
+	/*padding: 0;*/
+	margin-top: 1rem;
 	display: flex;
 	justify-content: center;
+}
 
+nav .main,
+nav .dropbtn,
+nav .search-recipe {
+   margin-left: 3rem;
 }
 
 .dropbtn,
-nav li {
-	margin-left: 2em;
-}
-
-.dropbtn,
-nav a {
+nav .main a {
 	text-decoration: none;
-	color: #008B8B; /*#707070; /************************change**************************************/
-	font-weight: 400;
-	font-size: 20px;
+	color: #008B8B;
+}
+
+.dropbtn {
+	font-size: 18px;
+}
+
+nav .main a {
+	font-size: 19px;
 }
 
 .dropbtn {
@@ -214,14 +230,16 @@ nav a {
     border: none;
 }
 
-nav a:hover,
-nav a:focus,
+nav .main a:hover,
+nav .main a:focus,
 .dropbtn:hover,
-.dropbtn:focus {
-	color: #006400;/*#1792d2; /************************change**************************************/
+.dropbtn:focus,
+.dropdown-content a:hover {
+	color: #1792d2;
 }
 
-.dropbtn:focus {
+.dropbtn:focus,
+.dropdown-content a:hover {
 	text-decoration: underline;
 }
 
@@ -235,12 +253,10 @@ nav a:focus,
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
-    /*z-index: 1;*/
 }
 
 .dropdown-content a {
-    /*color: red;*/
+    color: #008B8B;
     margin-top: 1rem;
     text-decoration: none;
     display: block;
@@ -250,9 +266,57 @@ nav a:focus,
     display: block;
 }
 
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-/*content*/
+nav .search-recipe input {
+    width: 400px;
+    font-size: 15px;
+    height: 25px;
+    padding: 0;
+    margin: 0;
 
+}
+
+nav .search-recipe button {
+    background: #ddd;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/*left sidebar*/
+.filter-recipes-at-ingredients {
+    top: 198px;
+    padding: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+    width: 28%;
+    margin-bottom: 2rem;
+
+}
+
+.filter-recipes-at-ingredients ul {
+    flex-wrap: wrap;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.filter-recipes-at-ingredients ul > li {
+    list-style-type: none;
+    margin-left: 0;
+}
+
+.filter-recipes-at-ingredients button {
+    border: none
+    text-decoration: none
+    text-align: center
+    background: #ddd;
+    font-size: 15px;
+    cursor: pointer;
+    margin-bottom: 200px; /*отступ left sidebar от footer*/
+}
+
+/*content*/
 .recipe,
 .step-for-cooking-at-recipe {
 	display: flex;
@@ -260,7 +324,8 @@ nav a:focus,
 }
 
 .recipe,
-.step-for-cooking-at-recipe {
+.step-for-cooking-at-recipe
+/*.filter-recipes-at-ingredients*/ {
     border-style: solid;
     border-width: 0.1rem;
     border-radius: 0.5rem;
@@ -268,20 +333,12 @@ nav a:focus,
     border-color: #FAF0E6;
 }
 
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!add!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 div .right > ul,
 ul.recipe-detail-ingredients {
-    /*margin-left: .5rem;*/
     padding-left: 1rem;
     list-style: none;
     list-style-type: "\2705";
 }
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!add!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-/*ul {
-  padding-left: 2rem;
-  list-style-type: none;
-}*/
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!add!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 /*
 order определяет порядок, используемый для размещения flex элементов в их flex контейнере.
@@ -298,34 +355,36 @@ order определяет порядок, используемый для ра�
     order: 2
 }
 
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-
-.form,
-.review,
-.child-review {
-    width: 420px;
+.create-comment-at-recipe-form {
+    width: 50%; /*ширина формы для отправки комментария к рецепту*/
 }
 
-.form-title {
+.comment,
+.child-comment {
+    width: 75%;
     margin-bottom: 1rem;
 }
 
-.form-content input,
-.form-content textarea {
+.create-comment-at-recipe-form-title {
+    margin-bottom: 1rem;
+}
+
+.create-comment-at-recipe-form-content input,
+.create-comment-at-recipe-form-content textarea {
     width: 100%;
     box-sizing: border-box;
     margin-bottom: .5rem;
 }
 
-.form-content textarea {
+.create-comment-at-recipe-form-content textarea {
     resize: none;
 }
 
-/*.form-content {
+/*.fcreate-comment-at-recipe-form-content {
     border: 1px solid gold;
 }*/
 
-.form-bttn {
+.create-comment-at-recipe-form-bttn {
     border: none;
     border-radius: 0.25rem;
     width: 100%;
@@ -334,61 +393,72 @@ order определяет порядок, используемый для ра�
     color: #ffffff;
     font-family: 'Lora', serif;
 }
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
 .step-for-cooking-at-recipe div.left,
 .step-for-cooking-at-recipe div.right,
 .recipe div.left,
 .recipe div.right {
      border: 1px solid gold;
 }
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-.review,
-.child-review {
+
+.comment,
+.child-comment {
     background-color: #f8f8f8;
     border-radius: 0.5rem;
     font-family: 'Lora', serif;
 }
 
-.review {
+.comment {
     margin-top: 1.5rem;
 }
 
-.child-review {
+.child-comment {
     margin-top: 1rem;
     margin-left: 5rem;
 }
 
-.review-title {
+.comment-title {
     display: inline;
     margin-top: 1rem;
 }
 
-.count-review {
+.count-comment {
     font-size: 0.75rem;
 }
 
-.review span,
-.child-review span {
+.comment span,
+.child-comment span {
     display: block;
     font-size: 0.9rem;
 }
 
-.review p,
-.child-review p {
+.comment p,
+.child-comment p {
     margin: 0.5rem 0;
 }
 
-.review-link {
+.comment-link {
 }
 
-@media (max-width: 737px) {
-	nav ul {
+@media (max-width: 1000px) {
+	nav {
 		flex-direction: column;
 	}
 
-	.dropbtn, nav li {
+	.dropbtn {
 		margin: 0.5rem 0;
 	}
+}
+
+@media (max-width: 1000px) {
+    .filter-recipes-at-ingredients {
+        display: none;
+    }
+    nav .main,
+    nav .dropbtn,
+    nav .search-recipe {
+        margin-left: 0;
+    }
 }
 
 @media (max-width: 675px) {
@@ -404,21 +474,18 @@ order определяет порядок, используемый для ра�
 	}
 
 	main {
-		width: 55%;
+		width: 65%;
 	}
 
 	aside {
-		width: 20%;
+		width: 30%;
 	}
 
-	.vehicle-images {
-		flex-direction: row;
-		justify-content: space-between;
-	}
+    .recipe {
+        margin-left: 1rem; /*отступ main от left sidebar*/
+    }
 
-
-
-	.recipe-image-main {        /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!change!!!!!!!!!!!!!!!!!!!!!!!*/
+	.recipe-image-main {
 		width: 100%;
 	}
 
@@ -439,46 +506,13 @@ cover: Смещаемый контент меняет свой размер та
     }
 
     .img-additional {
-/*
-cursor определяет курсор мыши, отображаемый при наведении указателя мыши на элемент
-pointer: Указатель, обозначающий ссылку, обычно указующая рука
-*/
-    	cursor: pointer;
+
  /*
  opacity устанавливает непрозрачность элемента. Непрозрачность - это степень, в которой содержимое скрывается за
  элементом, является противоположностью прозрачности.
  */
-    	opacity: .8;
+    	/*opacity: .8;*/
     	margin: 0.5rem 0;
-    }
-
-    .img-additional:hover {
-    	opacity: 1;
-    }
-
-    .img-dealer-center,
-    .img-dealer-centers {
-        width: 100%;
-        margin: 0.5rem 0;
-        object-fit:cover;
-    }
-
-    .img-dealer-center {
-        height: 20vw;
-    }
-
-    .img-dealer-centers {
-        height: 100%;
-    }
-
-    .vehicle {
-    	flex-direction: row;
-    	justify-content: left;
-    }
-
-    .vehicle-description {
-    	width: 32.5%;
-    	margin: 0 0.75rem;
     }
 
     .recipe,
@@ -488,23 +522,21 @@ pointer: Указатель, обозначающий ссылку, обычно
         margin-bottom: 2rem;
     }
 
-    .recipe div.right {  /*!!!!!!!!!!!!!change!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    .recipe div.right {
         width: 37%;
     }
 
-    .recipe div.left {   /*!!!!!!!!!!!!!change!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    .recipe div.left {
         width: 60%;
     }
 
-    .step-for-cooking-at-recipe div.right {  /*!!!!!!!!!!!!!adding recently!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    .step-for-cooking-at-recipe div.right {
         width: 48.5%;
     }
 
-    .step-for-cooking-at-recipe div.left {   /*!!!!!!!!!!!!!adding recently!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    .step-for-cooking-at-recipe div.left {
         width: 48.5%;
     }
-
-
 }
 
 /*footer*/
@@ -547,7 +579,6 @@ footer {
 .main a:hover,
 .main a:focus {
 	color: #1792d2;
-
 }
 
 main li {

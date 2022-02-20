@@ -118,5 +118,113 @@
     "parent": 9,
     "recipe": 5
   }
+},
+{
+  "model": "book_of_recipes.recipecomments",
+  "pk": 11,
+  "fields": {
+    "name": "Андрей",
+    "text": "Для меня было немного необычное сочетание, но определенно все вкусно. Спасибо.",
+    "email": "andreimorozov1993@gmail.ru",
+    "pub_date": "2022-02-17T20:33:50.874Z",
+    "parent": null,
+    "recipe": 6
+  }
+},
+{
+  "model": "book_of_recipes.recipecomments",
+  "pk": 12,
+  "fields": {
+    "name": "Арина",
+    "text": "А мне как-то не понравилось совсем",
+    "email": "arinamedvedkova1990@gmail.ru",
+    "pub_date": "2022-02-17T20:33:50.874Z",
+    "parent": 11,
+    "recipe": 6
+  }
+},
+{
+  "model": "book_of_recipes.recipecomments",
+  "pk": 13,
+  "fields": {
+    "name": "Полина",
+    "text": "Вполне себе неплохо получилось, скушали с большим удовольствием, но не могу сказать с уверенностью, что буду такое готовить снова.",
+    "email": "polinaabramenko1992@gmail.ru",
+    "pub_date": "2022-02-17T20:33:50.874Z",
+    "parent": null,
+    "recipe": 7
+  }
+},
+{
+  "model": "book_of_recipes.recipecomments",
+  "pk": 14,
+  "fields": {
+    "name": "Арина",
+    "text": "Для меня было немного необычное сочетание, но определенно все вкусно. Спасибо.",
+    "email": "arinavaculenko1998@gmail.ru",
+    "pub_date": "2022-02-17T20:33:50.874Z",
+    "parent": null,
+    "recipe": 7
+  }
+},
+{
+  "model": "book_of_recipes.recipecomments",
+  "pk": 15,
+  "fields": {
+    "name": "Регина",
+    "text": "Хороший и вкусный рецепт, блюдо нравится всем моим гостям.",
+    "email": "reginamakarenkova1976@gmail.ru",
+    "pub_date": "2022-02-17T20:33:50.874Z",
+    "parent": null,
+    "recipe": 8
+  }
+},
+{
+  "model": "book_of_recipes.recipecomments",
+  "pk": 16,
+  "fields": {
+    "name": "Татьяна",
+    "text": "Понравилось, можно готовить на праздники",
+    "email": "tatiyanavolkova1990@gmail.ru",
+    "pub_date": "2022-02-17T20:33:50.874Z",
+    "parent": null,
+    "recipe": 8
+  }
+},
+{
+  "model": "book_of_recipes.recipecomments",
+  "pk": 17,
+  "fields": {
+    "name": "Регина",
+    "text": "Какой крахмал? Картофельный или кукурузный?",
+    "email": "reginamakarenkova1976@gmail.ru",
+    "pub_date": "2022-02-17T20:33:50.874Z",
+    "parent": null,
+    "recipe": 9
+  }
+},
+{
+  "model": "book_of_recipes.recipecomments",
+  "pk": 18,
+  "fields": {
+    "name": "Администратор",
+    "text": "Понравилось, можно готовить на праздники",
+    "email": "admin_of_recipe_site1991@gmail.ru",
+    "pub_date": "2022-02-17T20:33:50.874Z",
+    "parent": 17,
+    "recipe": 9
+  }
+},
+{
+  "model": "book_of_recipes.recipecomments",
+  "pk": 19,
+  "fields": {
+    "name": "Арина",
+    "text": "Отличный соус!",
+    "email": "arinavaculenko1998@gmail.ru",
+    "pub_date": "2022-02-17T20:33:50.874Z",
+    "parent": null,
+    "recipe": 10
+  }
 }
 ]

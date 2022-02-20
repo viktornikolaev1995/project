@@ -1,8 +1,18 @@
 {% extends "book_of_recipes/base.html" %}
+{% load static %}
+{% block title %}{{recipe.name}}{% endblock %}
+{% block style %}
+<link rel="stylesheet" type="text/css" href="{% static 'book_of_recipes/css/base_detail.css' %}">
+{% endblock %}
+
+{% block sidebar_left %}
+<aside></aside>
+{% endblock %}
+
 {% block content %}
-<h2>{{recipe.name}}</h2>
+<h2 class="name-of-recipe">{{recipe.name}}</h2>
 <img src="{{recipe.image.url}}" class="img-main">
-<h2>Ингредиенты</h2>
+<h2 class="ingredients">Ингредиенты</h2>
 <ul class="recipe-detail-ingredients">
 {% for ingredient in recipe.ingredients.all %}
     {% if ingredient.quantity and ingredient.unit_of_measurement %}
@@ -12,7 +22,7 @@
     {% endif %}
 {% endfor %}
 </ul>
-<h3>Способ приготовления</h3>
+<h3>Способ приготовления:</h3>
 {% for step in recipe.steps_cooking_at_recipe.all %}
     <article class="step-for-cooking-at-recipe">
         <div class="left">
@@ -25,12 +35,55 @@
 {% endfor %}
 <hr>
 
+<form action="{% url 'create_comment_at_recipe' recipe.id %}" method="post" id="formComment">
+    <h3 class="create-comment-at-recipe-form-title">Оставить комментарий</h3>
+    {% csrf_token %}
+    <div class="create-comment-at-recipe-form">
+        <input type="hidden" name="parent" id="contactparent">
+        <div class="create-comment-at-recipe-form-content">
+            <input type="text" name="name" placeholder="Имя *" id="contactname" required="">
+        </div>
+        <div class="create-comment-at-recipe-form-content">
+            <input type="email" name="email" placeholder="Email *" id="contactemail" required="">
+        </div>
+        <div class="create-comment-at-recipe-form-content">
+            <textarea name="text" rows="6" placeholder="Текст *" id="contactcomment" required=""></textarea>
+        </div>
+        <button type="submit" class="create-comment-at-recipe-form-bttn">Отправить</button>
+    </div>
+</form>
+
+<div class="recipe-comments">
+    <h3 class="comment-title">Лента комментариев</h3><sup>{{ recipe_comments.keys|length }}</sup>
+    {% for parent_comment, children_comments in recipe_comments.items %}
+    <div class="comment">
+        <span>{{ parent_comment.name }}-{{ parent_comment.email }}</span>
+        <span>{{ parent_comment.pub_date }}</span>
+        <p>{{ parent_comment.text }}</p>
+        <a href="#formComment" class="comment-link" onclick="addComment( '{{ parent_comment.name }}',
+        '{{ parent_comment.id }}' )">
+            Ответить
+        </a>
+    </div>
+        {% if children_comments|length > 0 %}
+            {% for children_comment in children_comments %}
+                <div class="child-comment">
+                    <span>{{ children_comment.name }}-{{ children_comment.email }}</span>
+                    <span>{{ children_comment.pub_date }}</span>
+                    <p>{{ children_comment.text }}</p>
+                </div>
+            {% endfor %}
+        {% endif %}
+    {% endfor %}
+</div>
 <script>
-    function addReview(name, id) {
-        document.getElementById("contactreview").innerText = `${name}, `;
+    function addComment(name, id) {
+        document.getElementById("contactcomment").innerText = `${name}, `;
         document.getElementById("contactparent").value = id
     }
-
 </script>
+{% endblock %}
 
+{% block sidebar_right %}
+<aside></aside>
 {% endblock %}

@@ -1,8 +1,4 @@
 from django.contrib import admin
-from django.contrib.auth import get_user_model
-from django.contrib.auth.admin import UserAdmin
-from django.contrib.auth.models import User, Permission
-from django.template.defaultfilters import default_if_none
 from django.utils.safestring import mark_safe
 from .models import Category, Recipe, Ingredient, StepCookingAtRecipe, RecipeComments
 from django.forms import TextInput, Textarea
@@ -32,6 +28,7 @@ class StepCookingAtRecipeInline(admin.TabularInline):
 @admin.register(Recipe)
 class RecipeAdmin(admin.ModelAdmin):
     list_display = ('name', 'description', 'category', 'get_image', 'user')
+    list_filter = ('category', 'user')
     prepopulated_fields = {'slug': ('name',)}
     inlines = [StepCookingAtRecipeInline]
     readonly_fields = ('get_image',)
@@ -69,6 +66,7 @@ class IngredientAdmin(admin.ModelAdmin):
         'description',
         ('quantity', 'unit_of_measurement')
     )
+    list_filter = ('unit_of_measurement',)
     prepopulated_fields = {'slug': ('name', 'quantity', 'unit_of_measurement')}
 
     formfield_overrides = {
@@ -85,6 +83,7 @@ class StepCookingAtRecipeAdmin(admin.ModelAdmin):
         ('name', 'slug', 'recipe', 'image'),
         'description'
     )
+    list_filter = ('recipe',)
     readonly_fields = ('get_image',)
     formfield_overrides = {
         models.CharField: {'widget': TextInput(attrs={'size': '20'})},
@@ -105,6 +104,7 @@ class RecipeCommentsAdmin(admin.ModelAdmin):
     fields = (
         ('name', 'email'), 'text', ('recipe', 'parent')
     )
+    list_filter = ('recipe',)
 
 
 admin.site.site_title = 'Best Recipes'

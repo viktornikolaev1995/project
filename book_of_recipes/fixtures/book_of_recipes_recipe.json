@@ -6,7 +6,7 @@
     "name": "Острый томатный суп с индейкой",
     "description": "",
     "slug": "ostryj-tomatnyj-sup-s-indejkoj",
-    "image": "recipes/ajdfaiweo134oijwe.jpg",
+    "image": "recipes/2022/02/17/ajdfaiweo134oijwe.jpg",
     "category": 1,
     "cooking_time": "1 час",
     "user": 2,
@@ -39,7 +39,7 @@
     "name": "Суп с чечевицей и креветками",
     "description": "",
     "slug": "sup-s-chechevicej-i-krevetkami",
-    "image": "recipes/e098419343061a5.jpg",
+    "image": "recipes/2022/02/17/e098419343061a5.jpg",
     "category": 1,
     "cooking_time": "30 минут",
     "user": 2,
@@ -72,7 +72,7 @@
     "name": "Конфеты из фиников",
     "description": "",
     "slug": "konfety-iz-finikov",
-    "image": "recipes/2a5d03b55564b0b74235.jpg",
+    "image": "recipes/2022/02/17/2a5d03b55564b0b74235.jpg",
     "category": 2,
     "cooking_time": "15 минут",
     "user": 3,
@@ -96,7 +96,7 @@
     "name": "Фрукты с облепиховым кремом",
     "description": "",
     "slug": "frukty-s-oblepihovym-kremom",
-    "image": "recipes/s0sdf41sd3061a5.jpg",
+    "image": "recipes/2022/02/17/s0sdf41sd3061a5.jpg",
     "category": 2,
     "cooking_time": "15 минут",
     "user": 3,
@@ -120,7 +120,7 @@
     "name": "Греческий салат",
     "description": "",
     "slug": "grecheskij-salat",
-    "image": "recipes/4ab50340a8513c9fbf4.png",
+    "image": "recipes/2022/02/17/4ab50340a8513c9fbf4.png",
     "category": 3,
     "cooking_time": "15 минут",
     "user": 4,
@@ -137,6 +137,135 @@
       44,
       45,
       46
+    ]
+  }
+},
+{
+  "model": "book_of_recipes.recipe",
+  "pk": 6,
+  "fields": {
+    "name": "Салат из индейки с виноградом и орехами",
+    "description": "",
+    "slug": "salat-iz-indejki-s-vinogradom-i-orehami",
+    "image": "recipes/2022/02/17/fa72fe63df7bf4e22bca.jpg",
+    "category": 3,
+    "cooking_time": "20 минут",
+    "user": 4,
+    "archive": false,
+    "date_created": "2022-02-17T20:31:58.647Z",
+    "date_update": "2022-02-17T20:31:58.647Z",
+    "ingredients": [
+      27,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52
+    ]
+  }
+},
+{
+  "model": "book_of_recipes.recipe",
+  "pk": 7,
+  "fields": {
+    "name": "Пхали со шпинатом",
+    "description": "",
+    "slug": "phali-so-shpinatom",
+    "image": "recipes/2022/02/17/9de06e9e0797aeae182e8.png",
+    "category": 4,
+    "cooking_time": "40 минут",
+    "user": 5,
+    "archive": false,
+    "date_created": "2022-02-17T20:31:58.647Z",
+    "date_update": "2022-02-17T20:31:58.647Z",
+    "ingredients": [
+      7,
+      10,
+      53,
+      54,
+      55,
+      56,
+      57
+    ]
+  }
+},
+{
+  "model": "book_of_recipes.recipe",
+  "pk": 8,
+  "fields": {
+    "name": "Сырники из рикотты",
+    "description": "",
+    "slug": "syrniki-iz-rikotty",
+    "image": "recipes/2022/02/17/28076a9b873a35ae8b.jpg",
+    "category": 4,
+    "cooking_time": "30 минут",
+    "user": 5,
+    "archive": false,
+    "date_created": "2022-02-17T20:31:58.647Z",
+    "date_update": "2022-02-17T20:31:58.647Z",
+    "ingredients": [
+      58,
+      59,
+      60,
+      61,
+      62,
+      63
+    ]
+  }
+},
+{
+  "model": "book_of_recipes.recipe",
+  "pk": 9,
+  "fields": {
+    "name": "Соус терияки",
+    "description": "",
+    "slug": "sous-teriyaki",
+    "image": "recipes/2022/02/17/d4b17b209cc76f53212bb8.jpg",
+    "category": 5,
+    "cooking_time": "25 минут",
+    "user": 6,
+    "archive": false,
+    "date_created": "2022-02-17T20:31:58.647Z",
+    "date_update": "2022-02-17T20:31:58.647Z",
+    "ingredients": [
+      8,
+      10,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72
+    ]
+  }
+},
+{
+  "model": "book_of_recipes.recipe",
+  "pk": 10,
+  "fields": {
+    "name": "Соус зелёный карри",
+    "description": "",
+    "slug": "sous-zelyonyj-karri",
+    "image": "recipes/2022/02/17/f43d6f8ad55983068ee49d.jpg",
+    "category": 5,
+    "cooking_time": "15 минут",
+    "user": 6,
+    "archive": false,
+    "date_created": "2022-02-17T20:31:58.647Z",
+    "date_update": "2022-02-17T20:31:58.647Z",
+    "ingredients": [
+      10,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79
     ]
   }
 }

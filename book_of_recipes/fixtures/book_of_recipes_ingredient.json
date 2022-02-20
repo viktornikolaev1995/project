@@ -504,5 +504,368 @@
     "quantity": null,
     "unit_of_measurement": null
   }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 47,
+  "fields": {
+    "name": "филе индейки",
+    "description": "",
+    "slug": "file-indejki-100-g",
+    "quantity": "100",
+    "unit_of_measurement": "г"
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 48,
+  "fields": {
+    "name": "виноград",
+    "description": "",
+    "slug": "vinograd-200-g",
+    "quantity": "200",
+    "unit_of_measurement": "г"
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 49,
+  "fields": {
+    "name": "грецкие орехи (очищенные)",
+    "description": "",
+    "slug": "greckie-orehi-ochishennye-20-g",
+    "quantity": "20",
+    "unit_of_measurement": "г"
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 50,
+  "fields": {
+    "name": "сыр брынза",
+    "description": "",
+    "slug": "syr-brynza-50-g",
+    "quantity": "50",
+    "unit_of_measurement": "г"
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 51,
+  "fields": {
+    "name": "майонез",
+    "description": "",
+    "slug": "majonez",
+    "quantity": null,
+    "unit_of_measurement": null
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 52,
+  "fields": {
+    "name": "горчица",
+    "description": "",
+    "slug": "gorchica-1-chl",
+    "quantity": "1",
+    "unit_of_measurement": "ч.л."
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 53,
+  "fields": {
+    "name": "шпинат замороженный",
+    "description": "",
+    "slug": "shpinat-zamorozhennyj-300-g",
+    "quantity": "300",
+    "unit_of_measurement": "г"
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 54,
+  "fields": {
+    "name": "грецкие орехи (очищенные)",
+    "description": "",
+    "slug": "greckie-orehi-ochishennye",
+    "quantity": null,
+    "unit_of_measurement": null
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 55,
+  "fields": {
+    "name": "кинза",
+    "description": "",
+    "slug": "kinza-200-g",
+    "quantity": "200",
+    "unit_of_measurement": "г"
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 56,
+  "fields": {
+    "name": "перец чили",
+    "description": "",
+    "slug": "perec-chili-05-sht",
+    "quantity": "0.5",
+    "unit_of_measurement": "шт."
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 57,
+  "fields": {
+    "name": "уксус винный",
+    "description": "",
+    "slug": "uksus-vinnyj-2-stl",
+    "quantity": "2",
+    "unit_of_measurement": "ст.л."
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 58,
+  "fields": {
+    "name": "голубика",
+    "description": "",
+    "slug": "golubika-50-g",
+    "quantity": "50",
+    "unit_of_measurement": "г"
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 59,
+  "fields": {
+    "name": "сыр рикотта",
+    "description": "",
+    "slug": "syr-rikotta-200-g",
+    "quantity": "200",
+    "unit_of_measurement": "г"
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 60,
+  "fields": {
+    "name": "крупа манная",
+    "description": "",
+    "slug": "krupa-mannaya-3-stl",
+    "quantity": "3",
+    "unit_of_measurement": "ст.л."
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 61,
+  "fields": {
+    "name": "мука рисовая",
+    "description": "",
+    "slug": "muka-risovaya-3-stl",
+    "quantity": "3",
+    "unit_of_measurement": "ст.л."
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 62,
+  "fields": {
+    "name": "сахар",
+    "description": "",
+    "slug": "sahar-2-stl",
+    "quantity": "2",
+    "unit_of_measurement": "ст.л."
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 63,
+  "fields": {
+    "name": "мята",
+    "description": "",
+    "slug": "myata",
+    "quantity": null,
+    "unit_of_measurement": null
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 64,
+  "fields": {
+    "name": "имбирь",
+    "description": "",
+    "slug": "imbir-1-sht",
+    "quantity": "1",
+    "unit_of_measurement": "шт."
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 65,
+  "fields": {
+    "name": "перец чили",
+    "description": "",
+    "slug": "perec-chili-1-sht",
+    "quantity": "1",
+    "unit_of_measurement": "шт."
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 66,
+  "fields": {
+    "name": "сахар тростниковый",
+    "description": "",
+    "slug": "sahar-trostnikovyj-20-g",
+    "quantity": "20",
+    "unit_of_measurement": "г"
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 67,
+  "fields": {
+    "name": "соус соевый",
+    "description": "",
+    "slug": "sous-soevyj-300-ml",
+    "quantity": "300",
+    "unit_of_measurement": "мл"
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 68,
+  "fields": {
+    "name": "мёд",
+    "description": "",
+    "slug": "myod-3-chl",
+    "quantity": "3",
+    "unit_of_measurement": "ч.л."
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 69,
+  "fields": {
+    "name": "апельсин",
+    "description": "",
+    "slug": "apelsin-1-sht",
+    "quantity": "1",
+    "unit_of_measurement": "шт."
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 70,
+  "fields": {
+    "name": "мирин",
+    "description": "",
+    "slug": "mirin-10-ml",
+    "quantity": "10",
+    "unit_of_measurement": "мл"
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 71,
+  "fields": {
+    "name": "крахмал",
+    "description": "",
+    "slug": "krahmal-25-g",
+    "quantity": "25",
+    "unit_of_measurement": "г"
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 72,
+  "fields": {
+    "name": "масло оливковое",
+    "description": "",
+    "slug": "maslo-olivkovoe-10-ml",
+    "quantity": "10",
+    "unit_of_measurement": "мл"
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 73,
+  "fields": {
+    "name": "перец жгучий зелёный",
+    "description": "",
+    "slug": "perec-zhguchij-zelyonyj-5-sht",
+    "quantity": "5",
+    "unit_of_measurement": "шт."
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 74,
+  "fields": {
+    "name": "сахар",
+    "description": "",
+    "slug": "sahar-1-chl",
+    "quantity": "1",
+    "unit_of_measurement": "ч.л."
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 75,
+  "fields": {
+    "name": "кориандр",
+    "description": "",
+    "slug": "koriandr-05-chl",
+    "quantity": "0.5",
+    "unit_of_measurement": "ч.л."
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 76,
+  "fields": {
+    "name": "зира",
+    "description": "",
+    "slug": "zira-05-chl",
+    "quantity": "0.5",
+    "unit_of_measurement": "ч.л."
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 77,
+  "fields": {
+    "name": "кинза",
+    "description": "",
+    "slug": "kinza-05-chl",
+    "quantity": "0.5",
+    "unit_of_measurement": "ч.л."
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 78,
+  "fields": {
+    "name": "молоко кокосовое",
+    "description": "",
+    "slug": "moloko-kokosovoe-200-ml",
+    "quantity": "200",
+    "unit_of_measurement": "мл"
+  }
+},
+{
+  "model": "book_of_recipes.ingredient",
+  "pk": 79,
+  "fields": {
+    "name": "соус рыбный",
+    "description": "",
+    "slug": "sous-rybnyj-1-chl",
+    "quantity": "1",
+    "unit_of_measurement": "ч.л."
+  }
 }
 ]
