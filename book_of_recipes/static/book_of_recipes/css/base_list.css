@@ -380,7 +380,7 @@ order определяет порядок, используемый для ра�
     resize: none;
 }
 
-/*.fcreate-comment-at-recipe-form-content {
+/*.create-comment-at-recipe-form-content {
     border: 1px solid gold;
 }*/
 
@@ -394,12 +394,12 @@ order определяет порядок, используемый для ра�
     font-family: 'Lora', serif;
 }
 
-.step-for-cooking-at-recipe div.left,
+/*.step-for-cooking-at-recipe div.left,
 .step-for-cooking-at-recipe div.right,
 .recipe div.left,
 .recipe div.right {
      border: 1px solid gold;
-}
+}*/
 
 .comment,
 .child-comment {
