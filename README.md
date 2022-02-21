@@ -56,3 +56,11 @@ docker-compose logs -f app
 ```bash
 docker-compose stop
 ```
+
+### Остановка контейнеров с последующим их удалением
+
+Для остановки и удаления контейнеров выполните команду:
+
+```bash
+docker-compose down
+```
