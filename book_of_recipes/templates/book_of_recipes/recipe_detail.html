@@ -54,27 +54,23 @@
 </form>
 
 <div class="recipe-comments">
-    <h3 class="comment-title">Лента комментариев</h3><sup>{{ recipe_comments.keys|length }}</sup>
-    {% for parent_comment, children_comments in recipe_comments.items %}
+    <h3 class="comment-title">Лента комментариев</h3><sup>{{ recipe_comments|length }}</sup>
+    {% load mptt_tags %}
+    {% recursetree recipe_comments %}
     <div class="comment">
-        <span>{{ parent_comment.name }}-{{ parent_comment.email }}</span>
-        <span>{{ parent_comment.pub_date }}</span>
-        <p>{{ parent_comment.text }}</p>
-        <a href="#formComment" class="comment-link" onclick="addComment( '{{ parent_comment.name }}',
-        '{{ parent_comment.id }}' )">
-            Ответить
-        </a>
+        <span>{{ node.name }}-{{ node.email }}</span>
+        <span>{{ node.pub_date }}</span>
+        <p>{{ node.text }}</p>
+        <a href="#formComment" class="comment-link" onclick="addComment('{{ node.name }}', '{{ node.id }}' )">Ответить</a>
     </div>
-        {% if children_comments|length > 0 %}
-            {% for children_comment in children_comments %}
-                <div class="child-comment">
-                    <span>{{ children_comment.name }}-{{ children_comment.email }}</span>
-                    <span>{{ children_comment.pub_date }}</span>
-                    <p>{{ children_comment.text }}</p>
-                </div>
-            {% endfor %}
-        {% endif %}
-    {% endfor %}
+    <div class="child-comment">
+        {% for child in node.get_children %}
+            <span>{{ child.name }}-{{ child.email }}</span>
+            <span>{{ child.pub_date }}</span>
+            <p>{{ child.text }}</p>
+        {% endfor %}
+    </div>
+    {% endrecursetree %}
 </div>
 <script>
     function addComment(name, id) {

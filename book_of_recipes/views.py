@@ -38,13 +38,8 @@ class RecipeDetail(DataMixin, DetailView):
 
     def get_context_data(self, *, object_list=None, **kwargs):
         context = super().get_context_data(**kwargs)
-        recipe_parents_and_child_comments = {
-            parent_comment: [child for child in parent_comment.children.all()] for parent_comment in
-            RecipeComments.objects.select_related('recipe', 'parent').filter(
-                recipe__slug=self.kwargs['slug1']).order_by('id')
-        }
-
-        context['recipe_comments'] = recipe_parents_and_child_comments
+        recipe_comments = RecipeComments.objects.filter(recipe__slug=self.kwargs['slug1']).order_by('id')
+        context['recipe_comments'] = recipe_comments
         user_context = self.get_user_context()
         return dict(list(context.items()) + list(user_context.items()))
 

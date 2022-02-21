@@ -1,8 +1,12 @@
 from django.contrib import admin
 from django.utils.safestring import mark_safe
+from mptt.admin import MPTTModelAdmin
 from .models import Category, Recipe, Ingredient, StepCookingAtRecipe, RecipeComments
 from django.forms import TextInput, Textarea
 from django.db import models
+
+
+admin.site.register(RecipeComments, MPTTModelAdmin)
 
 
 class StepCookingAtRecipeInline(admin.TabularInline):
@@ -98,14 +102,13 @@ class StepCookingAtRecipeAdmin(admin.ModelAdmin):
     get_image.short_description = 'Изображение'
 
 
-@admin.register(RecipeComments)
-class RecipeCommentsAdmin(admin.ModelAdmin):
-    list_display = ('name', 'email', 'text', 'recipe')
-    fields = (
-        ('name', 'email'), 'text', ('recipe', 'parent')
-    )
-    list_filter = ('recipe',)
-
+# @admin.register(RecipeComments)
+# class RecipeCommentsAdmin(admin.ModelAdmin):
+#     list_display = ('name', 'email', 'text', 'recipe')
+#     fields = (
+#         ('name', 'email'), 'text', ('recipe', 'parent')
+#     )
+#     list_filter = ('recipe',)
 
 admin.site.site_title = 'Best Recipes'
 admin.site.site_header = 'Best Recipes'
