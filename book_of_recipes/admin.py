@@ -1,13 +1,15 @@
 from django import forms
 from django.contrib import admin
+from django.contrib.admin.widgets import FilteredSelectMultiple
 from django.utils.safestring import mark_safe
 from .models import Category, Recipe, Ingredient, StepCookingAtRecipe, RecipeComments
-from django.forms import TextInput, Textarea, CheckboxSelectMultiple, ModelForm
+from django.forms import TextInput, Textarea, ModelForm
 from django.db import models
 
 
 class RecipeAdminForm(ModelForm):
-    ingredients = forms.ModelMultipleChoiceField(label='Ингредиенты', widget=CheckboxSelectMultiple,
+    ingredients = forms.ModelMultipleChoiceField(label='Ингредиенты',
+                                                 widget=FilteredSelectMultiple(verbose_name="name", is_stacked=True,),
                                                  queryset=Ingredient.objects.all().order_by('name'))
 
 
