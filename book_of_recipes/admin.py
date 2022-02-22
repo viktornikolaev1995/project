@@ -7,7 +7,7 @@ from django.db import models
 
 
 class RecipeAdminForm(ModelForm):
-    ingredients = forms.ModelMultipleChoiceField(widget=CheckboxSelectMultiple,
+    ingredients = forms.ModelMultipleChoiceField(label='Ингредиенты', widget=CheckboxSelectMultiple,
                                                  queryset=Ingredient.objects.all().order_by('name'))
 
 
