@@ -1,8 +1,14 @@
+from django import forms
 from django.contrib import admin
 from django.utils.safestring import mark_safe
 from .models import Category, Recipe, Ingredient, StepCookingAtRecipe, RecipeComments
-from django.forms import TextInput, Textarea, CheckboxSelectMultiple
+from django.forms import TextInput, Textarea, CheckboxSelectMultiple, ModelForm
 from django.db import models
+
+
+class RecipeAdminForm(ModelForm):
+    ingredients = forms.ModelMultipleChoiceField(widget=CheckboxSelectMultiple,
+                                                 queryset=Ingredient.objects.all().order_by('name'))
 
 
 class StepCookingAtRecipeInline(admin.TabularInline):
@@ -28,6 +34,7 @@ class StepCookingAtRecipeInline(admin.TabularInline):
 @admin.register(Recipe)
 class RecipeAdmin(admin.ModelAdmin):
     list_display = ('name', 'description', 'category', 'get_image', 'user')
+    form = RecipeAdminForm
     list_filter = ('category', 'user')
     prepopulated_fields = {'slug': ('name',)}
     inlines = [StepCookingAtRecipeInline]
@@ -35,8 +42,7 @@ class RecipeAdmin(admin.ModelAdmin):
 
     formfield_overrides = {
         models.CharField: {'widget': TextInput(attrs={'size': '20'})},
-        models.TextField: {'widget': Textarea(attrs={'rows': 6, 'cols': 100})},
-        models.ManyToManyField: {'widget': CheckboxSelectMultiple},
+        models.TextField: {'widget': Textarea(attrs={'rows': 6, 'cols': 100})}
     }
 
     def get_image(self, obj):
