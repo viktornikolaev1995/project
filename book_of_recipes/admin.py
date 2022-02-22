@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.utils.safestring import mark_safe
 from .models import Category, Recipe, Ingredient, StepCookingAtRecipe, RecipeComments
-from django.forms import TextInput, Textarea
+from django.forms import TextInput, Textarea, CheckboxSelectMultiple
 from django.db import models
 
 
@@ -35,7 +35,8 @@ class RecipeAdmin(admin.ModelAdmin):
 
     formfield_overrides = {
         models.CharField: {'widget': TextInput(attrs={'size': '20'})},
-        models.TextField: {'widget': Textarea(attrs={'rows': 6, 'cols': 100})}
+        models.TextField: {'widget': Textarea(attrs={'rows': 6, 'cols': 100})},
+        models.ManyToManyField: {'widget': CheckboxSelectMultiple},
     }
 
     def get_image(self, obj):
