@@ -2,7 +2,7 @@
 
 Склонировать репозиторий: 
 ```bash
-git clone https://github.com/viktornikolaev1995/project.git
+git clone https://github.com/viktornikolaev1995/recipe_book.git
 ```
 
 ### Настройка проекта
